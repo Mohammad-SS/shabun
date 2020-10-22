@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>new factor</title>
+</head>
+<body>
+<form action="{% url "NewFactorPrices" %}" method="get">
+{% csrf_token %}
+<button type="submit">
+    ثبت
+</button>
+</form>
+</body>
+</html>

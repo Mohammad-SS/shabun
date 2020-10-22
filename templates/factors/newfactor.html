@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>new factor</title>
+</head>
+<body>
+<form action="{% url "NewFactorPrices" %}" method="post">
+{% csrf_token %}
+<label>
+    نام :
+</label>
+    <input name="name" type="text" >
+<label>
+    شماره فاکتور :
+</label>
+    <input name="sku" type="text" >
+<label>
+    نام مشتری :
+</label>
+    <input name="client" type="text" >
+    {% for item in items %}
+        <label>
+        {{ item.name }}
+        </label>
+        <input type="checkbox" name="items" value="{{ item.pk }}">
+    {% endfor %}
+<button type="submit">
+    ثبت
+</button>
+</form>
+</body>
+</html>
