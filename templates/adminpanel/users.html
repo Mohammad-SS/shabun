@@ -1,0 +1,311 @@
+<html dir="rtl">
+<head>
+    {% load static %}
+    {# Load Css #}
+    <link rel="stylesheet" href={% static "adminpanel/css/bootstrap.min.css" %}>
+    <link rel="stylesheet" href={% static "adminpanel/css/fontawesome.min.css" %}>
+    <link rel="stylesheet" href={% static "adminpanel/css/persian-datepicker.css" %}>
+    <link rel="stylesheet" href={% static "adminpanel/css/style.css" %}>
+
+    {#  Load Scripts       #}
+    <script src={% static "adminpanel/js/jquery.js" %}></script>
+    <script src={% static "adminpanel/js/all.min.js" %}></script>
+    <script src={% static "adminpanel/js/bootstrap.min.js" %}></script>
+    <script src={% static "adminpanel/js/notify.min.js" %}></script>
+    <script src={% static "adminpanel/js/persian-date.min.js" %}></script>
+    <script src={% static "adminpanel/js/persian-datepicker.min.js" %}></script>
+    <script src={% static "adminpanel/js/js.js" %}></script>
+    <title>{{ title }}</title>
+
+</head>
+<body dir="rtl">
+<div class="full-spinner"
+     style="position: fixed ; height: 100% ; width: 100% ; background-color: rgba(0, 0, 0 , 0.6) ; z-index: 100000 ; display: none">
+    <div class="row justify-content-center align-items-center h-100">
+        <div class="loader">
+            <p style="color: white"></p>
+        </div>
+    </div>
+
+</div>
+<div class="container w-100 home-container" style="font-size: 14px !important; min-height: 100%">
+    <div class="justify-content-center">
+        <div class="row">
+            <div class="col col-lg-12  text-center pt-3">
+                <p style="font-family: Quran ; font-size: 21px">
+                    بسم الله الرحمن الرحیم
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-lg-6  text-right pt-3">
+                <p style="font-family: Farsi ; font-weight: lighter ; font-size: 14px">
+                    خوش آمدی محمد باقر عظیمی
+                </p>
+            </div>
+            <div class="col col-lg-6  text-left pt-3">
+                <p style="font-family: Farsi ; font-weight: lighter ; font-size: 14px">
+                    <span id="time"></span>
+                </p>
+            </div>
+        </div>
+        <div class="row horizontal-line">
+            <div class="col col-lg-12 text-right">
+                <p style="font-family: Farsi ; font-weight: lighter ; font-size: 14px">
+                    <a href="{% url "home" %}">صفحه اصلی</a> > کاربران
+                </p>
+            </div>
+        </div>
+        <div style="margin-top:30px">
+            <form action={% url "postHandler" %}>
+
+                <div class="row">
+                    <div class="col-lg-2 form-group text-right p-2">
+                        <label>
+                            انجام عمل دسته جمعی :
+                        </label>
+                    </div>
+                    <div class="col-lg-3 form-group text-right">
+                        <select id="collection-selector" class="form-control">
+                            <option selected value="null">یک عمل را انتخاب کنید</option>
+                            <option value="del">پاک کردن انتخاب شده ها</option>
+                            <option value="ban">مسدود سازی انتخاب شده ها</option>
+                            <option value="unban">رفع مسدود سازی انتخاب شده ها</option>
+
+                        </select>
+                    </div>
+                    <div class="col-lg-1 form-group text-right">
+                        <button id="do-collection-archive" class="btn btn-danger p-2">
+                            انجام
+                        </button>
+                    </div>
+                    <div class="col-lg-6 text-left">
+
+                    </div>
+                </div>
+            </form>
+            <div class="row">
+                <div class="col-lg-2 form-group text-right p-2">
+                    <label>
+                        جست و جو در این صفحه:
+                    </label>
+                </div>
+                <div class="col-lg-3 form-group text-right">
+                    <input class="form-control" placeholder="متن مورد نظر را وارد کنید ..." id="search">
+                </div>
+
+            </div>
+            <table class="table table-hover text-light" style="font-size: 13px !important;">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">
+                        <input type="checkbox" value="0" id="checkAll">
+                    </th>
+                    <th scope="col">نام کاربری</th>
+                    <th scope="col">نام</th>
+                    <th scope="col">نام خانوادگی</th>
+                    <th scope="col">شماره موبایل</th>
+                    <th scope="col">شماره ملی</th>
+                    <th scope="col">ویرایش</th>
+
+
+                </tr>
+                </thead>
+                <tbody>
+                {% for item in items %}
+                    <tr
+                            class="text
+                    {% if item.id == selfId %}
+                    text-warning
+                    {% endif %}
+                    {% if item.isAdmin == True and not item.id == selfId %}
+                    text-primary
+                    {% endif %}
+                    {% if item.banned == True %}
+                    text-danger
+                    {% endif %}
+"
+                    >
+                        <th scope="row">{{ forloop.counter }}</th>
+                        <td>
+                            {% if not item.id == selfId %}
+                                <input type="checkbox" value="ch-{{ item.id }}">
+                            {% endif %}
+                        </td>
+                        <td>{{ item.userName }}</td>
+                        <td>
+                            <p style="max-width: 350px ; white-space: nowrap ; text-overflow: ellipsis ; overflow: hidden">
+                                {{ item.fName }}
+                            </p>
+                        </td>
+                        <td>{{ item.lName }} </td>
+                        <td>{{ item.phone }}</td>
+                        <td>{{ item.numberId }} </td>
+                        <td>
+                            <a href="{% url "userEditor" %}?id={{ item.id }}">
+                                ویرایش
+                            </a>
+                        </td>
+
+                    </tr>
+                {% endfor %}
+                </tbody>
+
+            </table>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <small class="text text-primary">
+                        ادمین
+                    </small>
+                    -
+                    <small class="" style="color: white!important;">
+                        کاربر عادی
+                    </small>
+                    -
+                    <small class="text text-danger">
+                        مسدود شده
+                    </small>
+                    -
+                    <small class="text text-warning">
+                        خود شما
+                    </small>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-12 text-center">
+                    {% for page in pages %}
+                        <a href="{% url 'archive' %}?page={{ page }}">
+                            <button class="btn btn-success
+                                    {% if page == current_page %}
+                                                    btn-danger
+                                                    {% endif %}
+"
+                                    {% if page == current_page %}
+                                    disabled
+                                    {% endif %}
+                            >
+                                {{ page }}
+                            </button>
+                        </a>
+
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+
+    $(document).ready(function () {
+        $("#search").on('keyup', function () {
+            let val = $(this).val().toLowerCase();
+            $('tbody tr').filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(val) > -1)
+            })
+        })
+        $("#datepick").pDatepicker({
+            "formatter": function (unix) {
+                var self = this;
+                var pdate = new persianDate(unix);
+                return (pdate.toLocale('en').format("DD/MM/YYYY"));
+            },
+            "inline": false,
+            "format": "L",
+            "viewMode": "day",
+            "initialValue": true,
+            "minDate": null,
+            "maxDate": null,
+            "autoClose": true,
+            "position": "auto",
+            "altFormat": "L",
+            "altField": "#date-en",
+            "onlyTimePicker": false,
+            "onlySelectOnDate": true,
+            "calendarType": "persian",
+            "inputDelay": 800,
+            "observer": false,
+            "calendar": {
+                "persian": {
+                    "locale": "fa",
+                    "showHint": true,
+                    "leapYearMode": "astronomical"
+                },
+                "gregorian": {
+                    "locale": "en",
+                    "showHint": false
+                }
+            },
+            "navigator": {
+                "enabled": true,
+                "scroll": {
+                    "enabled": false
+                },
+                "text": {
+                    "btnNextText": "<",
+                    "btnPrevText": ">"
+                }
+            },
+            "toolbox": {
+                "enabled": true,
+                "calendarSwitch": {
+                    "enabled": false,
+                    "format": "MMMM"
+                },
+                "todayButton": {
+                    "enabled": true,
+                    "text": {
+                        "fa": "امروز",
+                        "en": "Today"
+                    }
+                },
+                "submitButton": {
+                    "enabled": false,
+                    "text": {
+                        "fa": "تایید",
+                        "en": "Submit"
+                    }
+                },
+                "text": {
+                    "btnToday": "امروز"
+                }
+            },
+            "timePicker": {
+                "enabled": false,
+                "step": 1,
+                "hour": {
+                    "enabled": false,
+                    "step": null
+                },
+                "minute": {
+                    "enabled": true,
+                    "step": null
+                },
+                "second": {
+                    "enabled": true,
+                    "step": null
+                },
+                "meridian": {
+                    "enabled": true
+                }
+            },
+            "dayPicker": {
+                "enabled": true,
+                "titleFormat": "YYYY MMMM"
+            },
+            "monthPicker": {
+                "enabled": false,
+                "titleFormat": "YYYY"
+            },
+            "yearPicker": {
+                "enabled": false,
+                "titleFormat": "YYYY"
+            },
+            "responsive": true
+        })
+    })
+</script>
+</body>
+</html>
