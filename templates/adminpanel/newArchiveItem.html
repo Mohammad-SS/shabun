@@ -42,7 +42,6 @@
         <div class="row">
             <div class="col col-lg-6  text-right pt-3">
                 <p style="font-family: Farsi ; font-weight: lighter ; font-size: 14px">
-                    خوش آمدی محمد باقر عظیمی
                 </p>
             </div>
             <div class="col col-lg-6  text-left pt-3">
@@ -54,13 +53,14 @@
         <div class="row horizontal-line">
             <div class="col col-lg-12 text-right">
                 <p style="font-family: Farsi ; font-weight: lighter ; font-size: 14px">
-                    <a href="{% url "home" %}">صفحه اصلی > </a> <a href="{% url "archive" %}">آرشیو </a> > اضافه کردن
+                    <a href="{% url "home" %}">صفحه اصلی > </a> <a href="{% url "FactorsPage" %}">آرشیو </a> > اضافه
+                    کردن
                     آیتم جدید
                 </p>
             </div>
         </div>
         <div style="margin-top:30px">
-            <form method="post" action="{% url "postHandler" %}" enctype="multipart/form-data">
+            <form method="post" enctype="multipart/form-data">
                 {% csrf_token %}
                 <input type="hidden" name="handler" value="addNewArchiveItem">
 
@@ -71,108 +71,59 @@
                             نام :
                         </label>
                     </div>
-                    <div class="col-lg-3 form-group text-right">
+                    <div class="col-lg-2 form-group text-right">
                         <input type="text" class="form-control text-center" id="name"
                                name="name"
                         >
                         <small id="emailHelp" class="form-text text-center" style="font-size: 10px ">
-                            یک نام انتخاب کنید
+                            نام فاکتور
                         </small>
                     </div>
                     <div class="col-lg-1 form-group text-right p-2">
                         <label>
-                            دسته
+                            مشتری :
                         </label>
                     </div>
                     <div class="col-lg-3 form-group text-right">
                         <input type="text" class="form-control text-center"
-                               name="cat"
+                               id="client"
+                               name="client"
                                style="min-width: 200px">
                         <small id="emailHelp" class="form-text text-center" style="font-size: 10px ">
-                            موضوع این آیتم را وارد کنید
+                            نام مشتری
                         </small>
                     </div>
-                    <div class="col-lg-1 form-group text-right p-2" style="font-size: 13px">
+                    <div class="col-lg-2 form-group text-right p-2" style="font-size: 13px">
                         <label>
-                            نوع :
+                            شماره فاکتور :
                         </label>
                     </div>
                     <div class="col-lg-3 form-group text-right">
-                        <select name="itemType" class="form-control">
-                            <option value="V">تصویری</option>
-                            <option value="S">صوتی</option>
-
-                        </select>
+                        <input type="text" class="form-control text-center"
+                               id="sku"
+                               name="sku"
+                               style="min-width: 200px">
 
                         <small id="emailHelp" class="form-text text-center" style="font-size: 10px ">
-                            نوع این آیتم را انتخاب کنید
-                        </small>
-
-                    </div>
-                </div>
-                <div class="row">
-
-                    <div class="col-lg-3 form-group text-right p-2">
-                        <label>
-                            توضیحات برنامه را وارد کنید :
-                        </label>
-                    </div>
-                    <div class="col-lg-6 form-group text-right">
-                        <textarea type="text" class="form-control" id="desc" name="desc"
-                                  style="min-width: 200px"></textarea>
-                        <small id="emailHelp" class="form-text text-center" style="font-size: 10px ">
-                            یک توضیح کوتاه در مورد این برنامه وارد کنید
-                        </small>
-                    </div>
-                    <div class="col-lg-1 form-group text-right p-2">
-                        <label>
-                            طول برنامه :
-                        </label>
-                    </div>
-                    <div class="col-lg-2 form-group text-right">
-                        <input type="number" class="form-control text-center" id="duration"
-                               name="duration"
-                        >
-                        <small id="emailHelp" class="form-text text-center" style="font-size: 10px ">
-                            مدت زمان طول برنامه به دقیقه را وارد کنید
+                            میتوانید شماره فاکتور را وارد کنید ، در غیر این صورت یک شماره 4 رقمی برای فاکتور در نظر
+                            گرفته خواهد شد
                         </small>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-2 form-group text-right p-2">
-                        <label>
-                            تصویر آیتم :
-                        </label>
-                    </div>
+                        {% for item in items %}
                     <div class="col-lg-4 form-group text-right">
-                        <input type="file" class="form-control" name="picture"
-                               style="background-color:transparent ; color : white">
-                        <small id="emailHelp" class="form-text text-center" style="font-size: 10px ">
-                            تصویر مورد نظر برای این آیتم را انتخاب کنید
-                        </small>
-                    </div>
-                    <div class="col-lg-2 form-group text-right p-2">
                         <label>
-                            فایل آیتم :
+                        <input type="checkbox" name="item" value="{{ item.pk }}">    {{ item.name }}
+
                         </label>
                     </div>
-                    <div class="col-lg-4 form-group text-center">
-                        <input type="file" id="file" class="form-control" name="src"
-                               style="background-color:transparent ; color : white">
-                        <small id="emailHelp" class="form-text text-center" style="font-size: 10px ">
-                            ویدئو یا صوت مورد نظر برای این آیتم را انتخاب کنید
-                        </small>
-                    </div>
+                        {% endfor %}
 
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 form-group text-center">
-                        <button name="meth" class="btn btn-primary" value="submit" type="submit">اضافه کردن</button>
-                    </div>
-                    <div class="col-lg-6 form-group text-center">
-                        <button name="meth" class="btn btn-info" value="continue" type="submit">ثبت و اضافه کردن
-                            بعدی
-                        </button>
+                    <div class="col-lg-12 form-group text-center">
+                        <button name="meth" class="btn btn-primary" value="submit" type="submit">مرحله بعد</button>
                     </div>
                 </div>
             </form>
@@ -184,128 +135,17 @@
     $(document).ready(function () {
         $("button[type=submit]").on("click", function (e) {
             const name = $("#name").val()
-            const desc = $("#desc").val()
-            const duration = $("#duration").val()
-            const file = $("#file").val()
-            if (name == "" || desc == "" || duration <= 0 || file == "") {
+            const client = $("#client").val()
+            if (name == "" || client == "" ) {
                 e.preventDefault()
-                $.notify("فیلد های نام ، توضیحات و طول و فایل برنامه نمیتوانند خالی بمانند.", {
+                $.notify("نام و مشتری باید وارد شوند.", {
                     position: "top center",
                     style: "bootstrap",
                     className: "error",
                     autoHideDelay: 4000,
                     gap: 2
-
                 })
             }
-        })
-        $('#timepick').timepicker({
-            timeFormat: 'H:mm',
-            interval: 60,
-            minTime: '00',
-            maxTime: '23',
-            dynamic: true,
-            dropdown: false,
-            scrollbar: true
-        });
-        $("#datepick").pDatepicker({
-            "formatter": function (unix) {
-                var self = this;
-                var pdate = new persianDate(unix);
-                return (pdate.toLocale('en').format("DD/MM/YYYY"));
-            },
-            "inline": false,
-            "format": "L",
-            "viewMode": "day",
-            "initialValue": true,
-            "minDate": null,
-            "maxDate": null,
-            "autoClose": true,
-            "position": "auto",
-            "altFormat": "L",
-            "altField": "#date-en",
-            "onlyTimePicker": false,
-            "onlySelectOnDate": true,
-            "calendarType": "persian",
-            "inputDelay": 800,
-            "observer": false,
-            "calendar": {
-                "persian": {
-                    "locale": "fa",
-                    "showHint": true,
-                    "leapYearMode": "astronomical"
-                },
-                "gregorian": {
-                    "locale": "en",
-                    "showHint": false
-                }
-            },
-            "navigator": {
-                "enabled": true,
-                "scroll": {
-                    "enabled": false
-                },
-                "text": {
-                    "btnNextText": "<",
-                    "btnPrevText": ">"
-                }
-            },
-            "toolbox": {
-                "enabled": true,
-                "calendarSwitch": {
-                    "enabled": false,
-                    "format": "MMMM"
-                },
-                "todayButton": {
-                    "enabled": true,
-                    "text": {
-                        "fa": "امروز",
-                        "en": "Today"
-                    }
-                },
-                "submitButton": {
-                    "enabled": false,
-                    "text": {
-                        "fa": "تایید",
-                        "en": "Submit"
-                    }
-                },
-                "text": {
-                    "btnToday": "امروز"
-                }
-            },
-            "timePicker": {
-                "enabled": false,
-                "step": 1,
-                "hour": {
-                    "enabled": false,
-                    "step": null
-                },
-                "minute": {
-                    "enabled": true,
-                    "step": null
-                },
-                "second": {
-                    "enabled": true,
-                    "step": null
-                },
-                "meridian": {
-                    "enabled": true
-                }
-            },
-            "dayPicker": {
-                "enabled": true,
-                "titleFormat": "YYYY MMMM"
-            },
-            "monthPicker": {
-                "enabled": false,
-                "titleFormat": "YYYY"
-            },
-            "yearPicker": {
-                "enabled": false,
-                "titleFormat": "YYYY"
-            },
-            "responsive": true
         })
     })
 </script>

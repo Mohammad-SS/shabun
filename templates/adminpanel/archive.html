@@ -76,8 +76,7 @@
                         </button>
                     </div>
                     <div class="col-lg-6 text-left">
-                        <a >
-
+                        <a href="{% url "NewFactor" %}">
                             <button type="button" class="btn btn-warning p-2">
                                 اضافه کردن مورد جدید
                             </button>
@@ -105,12 +104,11 @@
                         <input type="checkbox" value="0" id="checkAll">
                     </th>
                     <th scope="col">نام</th>
-                    <th scope="col">توضیحات</th>
-                    <th scope="col">طول</th>
-                    <th scope="col">نوع</th>
-                    <th scope="col">دسته</th>
-                    <th scope="col">ویرایش</th>
-
+                    <th scope="col">شماره فاکتور</th>
+                    <th scope="col">نام مشتری</th>
+                    <th scope="col">تعداد آیتم</th>
+                    <th scope="col">مجموع هزینه</th>
+                    <th scope="col">تاریخ</th>
 
                 </tr>
                 </thead>
@@ -125,11 +123,11 @@
                                 {{ item.desc }}
                             </p>
                         </td>
-                        <td>{{ item.duration }} دقیقه </td>
+                        <td>{{ item.duration }} دقیقه</td>
                         <td>{{ item.itemType }}</td>
                         <td>{{ item.category }} </td>
                         <td>
-                            <a >
+                            <a>
                                 ویرایش
                             </a>
                         </td>

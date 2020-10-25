@@ -19,13 +19,12 @@ class Index(View):
 class ShowAllFactors(View):
     def get(self, request):
         factors = models.Factor.objects.all()
-        return render(request , "adminpanel/archive.html" )
-
+        return render(request , "adminpanel/archive.html" ,{"factors" : factors} )
 
 class CreateNewFactorItems(View):
     def get(self, request):
         items = models.Item.objects.all()
-        return render(request, "factors/newfactor.html", {"items": items})
+        return render(request, "adminpanel/newArchiveItem.html", {"items": items})
 
 
 class CreateNewFactorPrices(View):
