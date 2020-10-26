@@ -162,3 +162,9 @@ select option {
         transform: rotate(360deg);
     }
 }
+
+input.prices::-webkit-outer-spin-button,
+input.prices::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

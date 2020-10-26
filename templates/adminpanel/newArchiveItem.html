@@ -60,7 +60,7 @@
             </div>
         </div>
         <div style="margin-top:30px">
-            <form method="post" enctype="multipart/form-data">
+            <form action="{% url 'NewFactorPrices' %}" method="post" enctype="multipart/form-data">
                 {% csrf_token %}
                 <input type="hidden" name="handler" value="addNewArchiveItem">
 
@@ -114,7 +114,7 @@
                         {% for item in items %}
                     <div class="col-lg-4 form-group text-right">
                         <label>
-                        <input type="checkbox" name="item" value="{{ item.pk }}">    {{ item.name }}
+                        <input type="checkbox" name="items" value="{{ item.pk }}">    {{ item.name }}
 
                         </label>
                     </div>

@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     $("#checkAll").on("click", function () {
         if (!this.checked) {
             $("td input[type=checkbox]").prop("checked", false)

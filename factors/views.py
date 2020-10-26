@@ -1,6 +1,8 @@
 from django.shortcuts import render, HttpResponse, get_object_or_404
 from django.views import View
 from factors import models
+import uuid
+import random
 from django.http import JsonResponse
 
 
@@ -30,11 +32,18 @@ class CreateNewFactorItems(View):
 class CreateNewFactorPrices(View):
     def post(self, request):
         clientName = request.POST['client']
-        sku = request.POST['sku']
+        if "sku" in request.POST and not request.POST['sku'] == "" :
+            sku = request.POST['sku']
+        else :
+            rnd = random.randrange(1,34)
+            sku = str(uuid.uuid4().int)[rnd:rnd+4]
+            if sku[0] == "0":
+                sku = str(uuid.uuid4().int)[rnd:rnd+5]
         factorName = request.POST['name']
         itemsList = list(map(int, request.POST.getlist('items')))
         items = models.Item.objects.filter(pk__in=itemsList)
-        return render(request, "factors/newfactorprices.html",
+        print(itemsList)
+        return render(request, "adminpanel/factorPrices.html",
                       {"items": items, "factorName": factorName, "sku": sku, "clientname": clientName})
 
 class CreateNewFactor(View):

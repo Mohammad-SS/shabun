@@ -16,6 +16,7 @@
     <script src={% static "adminpanel/js/persian-date.min.js" %}></script>
     <script src={% static "adminpanel/js/persian-datepicker.min.js" %}></script>
     <script src={% static "adminpanel/js/js.js" %}></script>
+    <script src={% static "adminpanel/js/currency.min.js" %}></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
     <title>{{ title }}</title>
 
@@ -60,10 +61,8 @@
             </div>
         </div>
         <div style="margin-top:30px">
-            <form action="{% url 'NewFactorPrices' %}" method="post" enctype="multipart/form-data">
+            <form action="{% url 'LastPriceStep' %}" method="post" enctype="multipart/form-data">
                 {% csrf_token %}
-                <input type="hidden" name="handler" value="addNewArchiveItem">
-
                 <div class="row">
 
                     <div class="col-lg-1 form-group text-right p-2">
@@ -73,11 +72,10 @@
                     </div>
                     <div class="col-lg-2 form-group text-right">
                         <input type="text" class="form-control text-center" id="name"
-                               name="name"
+                               value="{{ factorName }}"
+                               name="name" disabled
                         >
-                        <small id="emailHelp" class="form-text text-center" style="font-size: 10px ">
-                            نام فاکتور
-                        </small>
+
                     </div>
                     <div class="col-lg-1 form-group text-right p-2">
                         <label>
@@ -87,11 +85,10 @@
                     <div class="col-lg-3 form-group text-right">
                         <input type="text" class="form-control text-center"
                                id="client"
-                               name="client"
+                               name="client" disabled
+                               value="{{ clientname }}"
                                style="min-width: 200px">
-                        <small id="emailHelp" class="form-text text-center" style="font-size: 10px ">
-                            نام مشتری
-                        </small>
+
                     </div>
                     <div class="col-lg-2 form-group text-right p-2" style="font-size: 13px">
                         <label>
@@ -101,66 +98,65 @@
                     <div class="col-lg-3 form-group text-right">
                         <input type="text" class="form-control text-center"
                                id="sku"
+                               disabled
                                name="sku"
+                               value="{{ sku }}"
                                style="min-width: 200px">
-
-                        <small id="emailHelp" class="form-text text-center" style="font-size: 10px ">
-                            میتوانید شماره فاکتور را وارد کنید ، در غیر این صورت یک شماره 4 رقمی برای فاکتور در نظر
-                            گرفته خواهد شد
-                        </small>
                     </div>
                 </div>
-                <div class="row">
-                        {% for item in items %}
-                    <div class="col-lg-4 form-group text-right">
-                        <label>
-                        <input type="checkbox" name="item" value="{{ item.pk }}">    {{ item.name }}
 
-                        </label>
-                    </div>
-                        {% endfor %}
-
-                </div>
-            <table class="table table-hover text-light" style="font-size: 13px !important;">
-                <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">
-                        <input type="checkbox" value="0" id="checkAll">
-                    </th>
-                    <th scope="col">نام</th>
-                    <th scope="col">شماره فاکتور</th>
-                    <th scope="col">نام مشتری</th>
-                    <th scope="col">تعداد آیتم</th>
-                    <th scope="col">مجموع هزینه</th>
-                    <th scope="col">تاریخ</th>
-
-                </tr>
-                </thead>
-                <tbody>
-                {% for item in items %}
+                <table class="table table-hover text-light" style="font-size: 13px !important;">
+                    <thead>
                     <tr>
-                        <th scope="row">{{ forloop.counter }}</th>
-                        <td><input type="checkbox" value="ch-{{ item.id }}"></td>
-                        <td>{{ item.name }}</td>
-                        <td>
-                            <p style="max-width: 350px ; white-space: nowrap ; text-overflow: ellipsis ; overflow: hidden">
-                                {{ item.desc }}
-                            </p>
-                        </td>
-                        <td>{{ item.duration }} دقیقه</td>
-                        <td>{{ item.itemType }}</td>
-                        <td>{{ item.category }} </td>
-                        <td>
-                            <a>
-                                ویرایش
-                            </a>
-                        </td>
+                        <th scope="col">شماره</th>
+                        <th scope="col">
+                        </th>
+                        <th scope="col">نام</th>
+                        <th scope="col">برند</th>
+                        <th scope="col">آخرین قیمت</th>
+                        <th scope="col">آخرین تغییر قیمت</th>
+                        <th scope="col">تعداد</th>
+                        <th scope="col">قیمت</th>
+                        <th scope="col">قیمت نهایی</th>
 
                     </tr>
-                {% endfor %}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                    {% for item in items %}
+                        <tr id="{{ item.id }}">
+                            <th scope="row">{{ item.id }}</th>
+                            <td class=" text-center">
+                                <a data-item="{{ item.pk }}" class="rmitem" href="#">
+                                    <i data-item="{{ item.pk }}" class="fa fa-times" aria-hidden="true"
+                                       style="color: #fe4443"></i>
+                                </a>
+                            </td>
+                            <td>{{ item.name }}</td>
+                            <td>
+                                <p style="max-width: 350px ; white-space: nowrap ; text-overflow: ellipsis ; overflow: hidden">
+                                    {{ item.brand }}
+                                </p>
+                            </td>
+                            <td>{{ item.lastPrice }} </td>
+                            <td>{{ item.changeTimeJalali }}</td>
+                            <td><input data-item="{{ item.pk }}" value="0" class="numbers form-group" type="number"
+                                       style="width: 60px"></td>
+                            <td><input data-item="{{ item.pk }}" id="price" value="0"
+                                       class="prices form-group text-left" type="number"
+                                       style="width: 150px ; padding-left:10px ">
+                                <small data-item="{{ item.pk }}" class="form-text text-center pricehint"
+                                       style="font-size: 10px ">
+
+                                </small>
+                            </td>
+                            <td>
+                                <p data-item="{{ item.pk }}" class="total"></p>
+                            </td>
+
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
                 <div class="row">
                     <div class="col-lg-12 form-group text-center">
                         <button name="meth" class="btn btn-primary" value="submit" type="submit">مرحله بعد</button>
@@ -173,10 +169,44 @@
 </div>
 <script type="text/javascript">
     $(document).ready(function () {
+        const TMN = value => {
+            return currency(value, {symbol: "", precision: 0})
+        }
+
+        $("a.rmitem").on("click", function (e) {
+            item = $(e.target).closest(".rmitem").attr("data-item")
+            $("tr#" + item + "").remove()
+        })
+
+        $(".prices").on("keyup", function (e) {
+            if(parseInt($(e.target).val())<0){
+                $(e.target).val(0)
+            }
+            {# calc prices : #}
+            itemid = $(e.target).attr("data-item")
+            number = $(".numbers[data-item=" + itemid + "]").val()
+            totalPrice = $(e.target).val() * number
+            $("p[data-item=" + itemid + "]").html(TMN(totalPrice).format())
+            $(".pricehint[data-item=" + itemid + "]").html(" قیمت واحد :" + TMN($(e.target).val()).format())
+
+        })
+
+        $(".numbers").on("change", function (e) {
+            if(parseInt($(e.target).val())<0){
+                $(e.target).val(0)
+            }
+            {# calc prices : #}
+            itemid = $(e.target).attr("data-item")
+            price = $(".prices[data-item=" + itemid + "]").val()
+            totalPrice = $(e.target).val() * price + ""
+            $("p[data-item=" + itemid + "]").html(TMN(totalPrice).format())
+            {# decimals ! :   #}
+
+        })
         $("button[type=submit]").on("click", function (e) {
             const name = $("#name").val()
             const client = $("#client").val()
-            if (name == "" || client == "" ) {
+            if (name == "" || client == "") {
                 e.preventDefault()
                 $.notify("نام و مشتری باید وارد شوند.", {
                     position: "top center",

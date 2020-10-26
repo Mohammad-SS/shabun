@@ -26,6 +26,7 @@ urlpatterns = [
     path("factors" , FactorsView.ShowAllFactors.as_view() , name="FactorsPage"),
     path("factors/new", FactorsView.CreateNewFactorItems.as_view(), name="NewFactor"),
     path("factors/new/setprices", FactorsView.CreateNewFactorPrices.as_view(), name="NewFactorPrices"),
-    # path("factors")
+    path("factors/new/lastStep", FactorsView.CreateNewFactor.as_view(), name="LastPriceStep"),
+                  # path("factors")
     path("factors/<int:pk>", FactorsView.ShowFactorDetails.as_view(), name="FactorsPage"),
 ] + static("/alllo/")
