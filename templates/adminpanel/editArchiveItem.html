@@ -54,16 +54,19 @@
         <div class="row horizontal-line">
             <div class="col col-lg-12 text-right">
                 <p style="font-family: Farsi ; font-weight: lighter ; font-size: 14px">
-                    <a href="{% url "home" %}">صفحه اصلی > </a> <a href="{% url "archive" %}">آرشیو </a> > ویرایش
+                    <a href="{% url "home" %}">صفحه اصلی > </a> <a >فاکتور ها </a> > ویرایش
                     آیتم
                 </p>
             </div>
         </div>
         <div style="margin-top:30px">
-            <form method="post" action="{% url "postHandler" %}" enctype="multipart/form-data">
+            <form method="post"  enctype="multipart/form-data">
                 {% csrf_token %}
                 <input type="hidden" name="handler" value="editThisArchiveItem">
                 <input type="hidden" name="itemId" value="{{ item.id }}">
+                <div style="margin-top:30px">
+            <form action="{% url 'LastPriceStep' %}" method="post">
+                {% csrf_token %}
                 <div class="row">
 
                     <div class="col-lg-1 form-group text-right p-2">
@@ -71,138 +74,98 @@
                             نام :
                         </label>
                     </div>
-                    <div class="col-lg-3 form-group text-right">
-                        <input type="text" class="form-control text-center" value="{{ item.name }}" id="name"
-                               name="name"
-                        >
-                        <small id="emailHelp" class="form-text text-center" style="font-size: 10px ">
-                            یک نام انتخاب کنید
-                        </small>
-                    </div>
-                    <div class="col-lg-1 form-group text-right p-2">
-                        <label>
-                            دسته
-                        </label>
-                    </div>
-                    <div class="col-lg-3 form-group text-right">
-                        <input value="{{ item.category }}" type="text" class="form-control text-center"
-                               name="cat"
-                               style="min-width: 200px">
-                        <small id="emailHelp" class="form-text text-center" style="font-size: 10px ">
-                            موضوع این آیتم را وارد کنید
-                        </small>
-                    </div>
-                    <div class="col-lg-1 form-group text-right p-2" style="font-size: 13px">
-                        <label>
-                            نوع :
-                        </label>
-                    </div>
-                    <div class="col-lg-3 form-group text-right">
-                        <select name="itemType" class="form-control">
-                            <option value="S">صوتی</option>
-
-                            <option {% if item.itemType == "V" %}
-                                selected
-                            {% endif %}  value="V">تصویری
-                            </option>
-
-                        </select>
-
-                        <small id="emailHelp" class="form-text text-center" style="font-size: 10px ">
-                            نوع این آیتم را انتخاب کنید
-                        </small>
-
-                    </div>
-                </div>
-                <div class="row">
-
-                    <div class="col-lg-3 form-group text-right p-2">
-                        <label>
-                            توضیحات برنامه را وارد کنید :
-                        </label>
-                    </div>
-                    <div class="col-lg-6 form-group text-right">
-                        <textarea type="text" class="form-control" id="desc" name="desc"
-                                  style="min-width: 200px">{{ item.desc }}</textarea>
-                        <small id="emailHelp" class="form-text text-center" style="font-size: 10px ">
-                            یک توضیح کوتاه در مورد این برنامه وارد کنید
-                        </small>
-                    </div>
-                    <div class="col-lg-1 form-group text-right p-2">
-                        <label>
-                            طول برنامه :
-                        </label>
-                    </div>
                     <div class="col-lg-2 form-group text-right">
-                        <input type="number" class="form-control text-center" value={{ item.duration }} id="duration"
-                               name="duration"
+                        <input type="text" class="form-control text-center" id="name"
+                               value="{{ factor.name }}"
+                               name="name" readonly
                         >
-                        <small id="emailHelp" class="form-text text-center" style="font-size: 10px ">
-                            مدت زمان طول برنامه به دقیقه را وارد کنید
-                        </small>
+
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-2 form-group text-right p-2">
+                    <div class="col-lg-1 form-group text-right p-2">
                         <label>
-                            تصویر آیتم :
+                            مشتری :
                         </label>
                     </div>
-                    <div class="col-lg-4 form-group text-right">
-                        <input type="file" class="form-control" name="picture"
-                               style="background-color:transparent ; color : white">
-                        <small id="emailHelp" class="form-text text-center" style="font-size: 10px ">
-                            تصویر مورد نظر برای این آیتم را انتخاب کنید
-                        </small>
+                    <div class="col-lg-3 form-group text-right">
+                        <input type="text" class="form-control text-center"
+                               id="client"
+                               name="client" readonly
+                               value="{{ factor.client}}"
+                               style="min-width: 200px">
+
                     </div>
-                    <div class="col-lg-2 form-group text-right p-2">
+                    <div class="col-lg-2 form-group text-right p-2" style="font-size: 13px">
                         <label>
-                            فایل آیتم :
+                            شماره فاکتور :
                         </label>
                     </div>
-                    <div class="col-lg-4 form-group text-center">
-                        <input type="file" id="file" class="form-control" name="src"
-                               style="background-color:transparent ; color : white">
-                        <small id="emailHelp" class="form-text text-center" style="font-size: 10px ">
-                            ویدئو یا صوت مورد نظر برای این آیتم را انتخاب کنید
-                        </small>
+                    <div class="col-lg-3 form-group text-right">
+                        <input type="text" class="form-control text-center"
+                               id="sku"
+                               readonly
+                               name="sku"
+                               value="{{ factor.sku }}"
+                               style="min-width: 200px">
+                    </div>
+                    <div class="col-lg-3 form-group text-right">
+                        <p style="min-width: 200px">
+                           {{ factor.addTimeJalali }}
+                        </p>
                     </div>
 
                 </div>
+
+                <table class="table table-hover text-light" style="font-size: 13px !important;">
+                    <thead>
+                    <tr>
+                        <th scope="col">کد</th>
+                        <th scope="col">نام</th>
+                        <th scope="col">برند</th>
+                        <th scope="col">تعداد</th>
+                        <th scope="col">قیمت</th>
+                        <th scope="col">قیمت نهایی</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for item in items %}
+                        <tr id="{{ item.id }}">
+                            <th scope="row">{{ item.id }}</th>
+                            <td>{{ item.item.name }}</td>
+                            <td>
+                                <p style="max-width: 350px ; white-space: nowrap ; text-overflow: ellipsis ; overflow: hidden">
+                                    {{ item.item.brand }}
+                                </p>
+                            </td>
+                            <td><p style="width: 60px">
+                                {{ item.number }}
+                            </p></td>
+                            <td><p style="width: 150px ; padding-left:10px ">
+                                {{ item.price }}
+                            </p></td>
+                            <td>
+                                <p>
+                                    {{ item.finalPrice }}
+                                </p>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
                 <div class="row">
-                    <div class="col-lg-2 form-group text-right p-2">
-                        <label>
-                            تصویر کنونی :
-                        </label>
-                    </div>
-                    <div class="col-lg-4 form-group text-center p-2">
-                        <img src='{{ item.photo.url }}'
-                             style="height: auto ; width: 50% ; border: 2px dashed white ; border-radius: 9px">
-                    </div>
-                    <div class="col-lg-2 form-group text-right p-2">
-                        <label>
-                            فایل کنونی :
-                        </label>
-                    </div>
-                    <div class="col-lg-4 form-group text-center">
-                        <span class="bg-light p-1"
-                              style="background-color: white ; border-radius: 7px ; color: #0b2e13">
-                            <a href="{{ item.src.url }}">
-                                {{ item.src.name }}
-                            </a>
-                        </span>
-                        <small id="emailHelp" class="form-text text-center" style="font-size: 10px ; margin-top: 15px ">
-                            حجم : {{ item.size }}
-                        </small>
+                    <div class="col-lg-12 form-group text-center">
                     </div>
                 </div>
+            </form>
+        </div>
                 <div class="row">
                     <div class="col-lg-6 form-group text-center">
-                        <button name="meth" class="btn btn-warning" value="edit" type="submit">ویرایش</button>
                     </div>
                     <div class="col-lg-6 form-group text-center">
-                        <button name="meth" class="btn btn-danger" value="delete" type="submit">حذف
+                        <a href="{% url "FactorPrinter" pk=factor.pk %}" >
+                        <button class="btn btn-success">دریافت فایل اکسل
                         </button>
+                        </a>
                     </div>
                 </div>
             </form>

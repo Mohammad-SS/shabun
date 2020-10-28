@@ -15,14 +15,23 @@ class Item(models.Model):
 
 class Factor(models.Model):
     name = models.CharField(max_length=80)
-    sku = models.IntegerField()
+    sku = models.IntegerField(unique=False)
     client = models.CharField(max_length=110)
     addTime = models.DateTimeField(auto_now=True)
     totalCost = models.IntegerField(null=True, blank=True)
-
+    @property
+    def addTimeJalali(self):
+        return jdatetime.datetime.fromgregorian(datetime=self.addTime).strftime("%Y/%m/%d")
+    @property
+    def sumitem(self):
+        return self.factorlookup_set.all().count()
 
 class FactorLookUp(models.Model):
     factor = models.ForeignKey(Factor, on_delete=models.CASCADE)
     item = models.ForeignKey(Item, on_delete=models.SET_NULL, null=True)
     number = models.IntegerField()
     price = models.IntegerField()
+
+    @property
+    def finalPrice(self):
+        return self.number * self.price

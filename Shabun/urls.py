@@ -22,11 +22,12 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('' , FactorsView.Index.as_view() , name="home"),
-    # path('Items' , FactorsView.ShowAllItems.as_view() , name="ItemsPage"),
+    # factor paths :
     path("factors" , FactorsView.ShowAllFactors.as_view() , name="FactorsPage"),
     path("factors/new", FactorsView.CreateNewFactorItems.as_view(), name="NewFactor"),
     path("factors/new/setprices", FactorsView.CreateNewFactorPrices.as_view(), name="NewFactorPrices"),
     path("factors/new/lastStep", FactorsView.CreateNewFactor.as_view(), name="LastPriceStep"),
-                  # path("factors")
-    path("factors/<int:pk>", FactorsView.ShowFactorDetails.as_view(), name="FactorsPage"),
-] + static("/alllo/")
+    path("factors/<int:pk>", FactorsView.ShowFactorDetails.as_view(), name="FactorDetails"),
+    path("factors/<int:pk>/print", FactorsView.PrintFactorToXLS.as_view(), name="FactorPrinter"),
+
+              ]

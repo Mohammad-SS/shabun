@@ -61,7 +61,7 @@
             </div>
         </div>
         <div style="margin-top:30px">
-            <form action="{% url 'LastPriceStep' %}" method="post" enctype="multipart/form-data">
+            <form action="{% url 'LastPriceStep' %}" method="post">
                 {% csrf_token %}
                 <div class="row">
 
@@ -73,7 +73,7 @@
                     <div class="col-lg-2 form-group text-right">
                         <input type="text" class="form-control text-center" id="name"
                                value="{{ factorName }}"
-                               name="name" disabled
+                               name="name" readonly
                         >
 
                     </div>
@@ -85,7 +85,7 @@
                     <div class="col-lg-3 form-group text-right">
                         <input type="text" class="form-control text-center"
                                id="client"
-                               name="client" disabled
+                               name="client" readonly
                                value="{{ clientname }}"
                                style="min-width: 200px">
 
@@ -98,7 +98,7 @@
                     <div class="col-lg-3 form-group text-right">
                         <input type="text" class="form-control text-center"
                                id="sku"
-                               disabled
+                               readonly
                                name="sku"
                                value="{{ sku }}"
                                style="min-width: 200px">
@@ -139,10 +139,13 @@
                             </td>
                             <td>{{ item.lastPrice }} </td>
                             <td>{{ item.changeTimeJalali }}</td>
-                            <td><input data-item="{{ item.pk }}" value="0" class="numbers form-group" type="number"
+                            <td><input data-item="{{ item.pk }}"
+                                       value="0" class="numbers form-group" type="number"
+                                       name="number__{{ item.pk }}"
                                        style="width: 60px"></td>
                             <td><input data-item="{{ item.pk }}" id="price" value="0"
                                        class="prices form-group text-left" type="number"
+                                       name="price__{{ item.pk }}"
                                        style="width: 150px ; padding-left:10px ">
                                 <small data-item="{{ item.pk }}" class="form-text text-center pricehint"
                                        style="font-size: 10px ">
@@ -179,7 +182,7 @@
         })
 
         $(".prices").on("keyup", function (e) {
-            if(parseInt($(e.target).val())<0){
+            if (parseInt($(e.target).val()) < 0) {
                 $(e.target).val(0)
             }
             {# calc prices : #}
@@ -192,7 +195,7 @@
         })
 
         $(".numbers").on("change", function (e) {
-            if(parseInt($(e.target).val())<0){
+            if (parseInt($(e.target).val()) < 0) {
                 $(e.target).val(0)
             }
             {# calc prices : #}

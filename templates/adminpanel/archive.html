@@ -99,10 +99,7 @@
             <table class="table table-hover text-light" style="font-size: 13px !important;">
                 <thead>
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">
-                        <input type="checkbox" value="0" id="checkAll">
-                    </th>
+                    <th scope="col">شماره</th>
                     <th scope="col">نام</th>
                     <th scope="col">شماره فاکتور</th>
                     <th scope="col">نام مشتری</th>
@@ -113,23 +110,47 @@
                 </tr>
                 </thead>
                 <tbody>
-                {% for item in items %}
+                {% for item in factors %}
                     <tr>
-                        <th scope="row">{{ forloop.counter }}</th>
-                        <td><input type="checkbox" value="ch-{{ item.id }}"></td>
-                        <td>{{ item.name }}</td>
+
+                        <th scope="row">
+                                                                    <a href="{% url "FactorDetails" pk=item.pk %}">
+
+                                                                        {{ item.id }}</a></th>
+                        <td>
+                            <a href="{% url "FactorDetails" pk=item.pk %}">
+                            {{ item.name }}
+                            </a>
+                        </td>
                         <td>
                             <p style="max-width: 350px ; white-space: nowrap ; text-overflow: ellipsis ; overflow: hidden">
-                                {{ item.desc }}
+                                                                                                    <a href="{% url "FactorDetails" pk=item.pk %}">
+
+                                {{ item.sku }}
+                                                                                                    </a>
                             </p>
                         </td>
-                        <td>{{ item.duration }} دقیقه</td>
-                        <td>{{ item.itemType }}</td>
-                        <td>{{ item.category }} </td>
                         <td>
-                            <a>
-                                ویرایش
-                            </a>
+                                                                                                <a href="{% url "FactorDetails" pk=item.pk %}">
+                            {{ item.client }}
+                                                                                                </a>
+                        </td>
+                        <td>
+                                                                                                <a href="{% url "FactorDetails" pk=item.pk %}">
+
+                            {{ item.sumitem }}
+                                                                                                </a>
+                        </td>
+                        <td>
+                                                                                                <a href="{% url "FactorDetails" pk=item.pk %}">
+
+                            {{ item.totalCost }}
+                                                                                                </a>
+                        </td>
+                        <td>
+                                                                                                <a href="{% url "FactorDetails" pk=item.pk %}">
+                            {{ item.addTimeJalali }}
+                                                                                                </a>
                         </td>
 
                     </tr>
