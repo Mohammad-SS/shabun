@@ -5,7 +5,7 @@ import uuid
 import random
 from xlsxwriter.workbook import Workbook
 import jdatetime
-
+import pandas as pd
 # Create your views here.
 
 class Index(View):
@@ -57,6 +57,8 @@ class CreateNewFactor(View):
                 if post["number__"+itemid] == 0:
                     continue
                 item = models.Item.objects.get(pk=itemid)
+                item.lastPrice = price
+                item.save()
                 lookup = models.FactorLookUp(item=item , factor=factor , price=price , number=number)
                 lookup.save()
         factor.totalCost = totalCost
@@ -113,3 +115,8 @@ class PrintFactorToXLS(View):
         sheet.right_to_left()
         book.close()
         return response
+
+class ShowAllItems(View):
+    def get(self, request):
+        items = models.Item.objects.all()
+        return render(request , "adminpanel/showTools.html" ,{"items" : items} )

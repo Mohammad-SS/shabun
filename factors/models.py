@@ -12,6 +12,10 @@ class Item(models.Model):
     def changeTimeJalali(self):
         return jdatetime.datetime.fromgregorian(datetime=self.lastChangeTime).strftime("%Y/%m/%d")
 
+    @property
+    def addTimeJalali(self):
+        return jdatetime.datetime.fromgregorian(datetime=self.addTime).strftime("%Y/%m/%d")
+
 
 class Factor(models.Model):
     name = models.CharField(max_length=80)
@@ -24,7 +28,11 @@ class Factor(models.Model):
         return jdatetime.datetime.fromgregorian(datetime=self.addTime).strftime("%Y/%m/%d")
     @property
     def sumitem(self):
-        return self.factorlookup_set.all().count()
+        lookups = self.factorlookup_set.all()
+        sumitems = 0
+        for lookup in lookups:
+            sumitems += lookup.number
+        return sumitems
 
 class FactorLookUp(models.Model):
     factor = models.ForeignKey(Factor, on_delete=models.CASCADE)

@@ -51,7 +51,7 @@
         <div class="row horizontal-line">
             <div class="col col-lg-12 text-right">
                 <p style="font-family: Farsi ; font-weight: lighter ; font-size: 14px">
-                    <a href="{% url "home" %}">صفحه اصلی</a> > فاکتور ها
+                    <a href="{% url "home" %}">صفحه اصلی</a> > تجهیزات
                 </p>
             </div>
         </div>
@@ -86,83 +86,46 @@
                 <tr>
                     <th scope="col">شماره</th>
                     <th scope="col">نام</th>
-                    <th scope="col">شماره فاکتور</th>
-                    <th scope="col">نام مشتری</th>
-                    <th scope="col">تعداد آیتم</th>
-                    <th scope="col">مجموع هزینه</th>
-                    <th scope="col">تاریخ</th>
+                    <th scope="col">برند</th>
+                    <th scope="col">آخرین قیمت</th>
+                    <th scope="col">تاریخ آخرین قیمت</th>
+                    <th scope="col">تاریخ اضافه شدن</th>
 
                 </tr>
                 </thead>
                 <tbody>
-                {% for item in factors %}
+                {% for item in items %}
                     <tr>
 
                         <th scope="row">
-                                                                    <a href="{% url "FactorDetails" pk=item.pk %}">
 
-                                                                        {{ item.id }}</a></th>
+                                                                        {{ item.id }}
+
+                        </th>
                         <td>
-                            <a href="{% url "FactorDetails" pk=item.pk %}">
                             {{ item.name }}
-                            </a>
                         </td>
                         <td>
                             <p style="max-width: 350px ; white-space: nowrap ; text-overflow: ellipsis ; overflow: hidden">
-                                                                                                    <a href="{% url "FactorDetails" pk=item.pk %}">
 
-                                {{ item.sku }}
-                                                                                                    </a>
+                                {{ item.brand }}
                             </p>
                         </td>
                         <td>
-                                                                                                <a href="{% url "FactorDetails" pk=item.pk %}">
-                            {{ item.client }}
-                                                                                                </a>
+                            {{ item.lastPrice }}
                         </td>
                         <td>
-                                                                                                <a href="{% url "FactorDetails" pk=item.pk %}">
-
-                            {{ item.sumitem }}
-                                                                                                </a>
+                            {{ item.changeTimeJalali }}
                         </td>
                         <td>
-                                                                                                <a href="{% url "FactorDetails" pk=item.pk %}">
-
-                            {{ item.totalCost }}
-                                                                                                </a>
-                        </td>
-                        <td>
-                                                                                                <a href="{% url "FactorDetails" pk=item.pk %}">
                             {{ item.addTimeJalali }}
-                                                                                                </a>
                         </td>
 
                     </tr>
                 {% endfor %}
                 </tbody>
             </table>
-            <div class="row ">
-                <div class="col-lg-12 text-center">
-                    {% for page in pages %}
-                        <a>
-                            <button class="btn btn-success
-                                    {% if page == current_page %}
-                                                    btn-danger
-                                                    {% endif %}
-"
-                                    {% if page == current_page %}
-                                    disabled
-                                    {% endif %}
-                            >
-                                {{ page }}
-                            </button>
-                        </a>
 
-                    {% endfor %}
-
-                </div>
-            </div>
         </div>
     </div>
 </div>

@@ -30,4 +30,6 @@ urlpatterns = [
     path("factors/<int:pk>", FactorsView.ShowFactorDetails.as_view(), name="FactorDetails"),
     path("factors/<int:pk>/print", FactorsView.PrintFactorToXLS.as_view(), name="FactorPrinter"),
 
-              ]
+    # tools path :
+    path("tools", FactorsView.ShowAllItems.as_view(), name="toolsImport"),
+]
