@@ -1,0 +1,593 @@
+﻿name,brand,last price
+"کلید اتوماتیک قابل تنظیم      3P  ,   25A     ,  16kA",brand,0
+"کلید اتوماتیک قابل تنظیم      3P  ,   40A     ,  16kA      ",brand,0
+"کلید اتوماتیک قابل تنظیم        3P  ,   63A     ,  16kA      ",brand,0
+"کلید اتوماتیک قابل تنظیم      3P  ,   80A     ,  16kA        ",brand,0
+"کلید اتوماتیک قابل تنظیم         3P  ,   100A   ,  16kA     ",brand,0
+" کلید اتوماتیک قابل تنظیم        3P  ,   125A   ,  16kA      ",brand,0
+"کلید اتوماتیک قابل تنظیم        3P  ,   160A   ,  16kA            ",brand,0
+"کلید اتوماتیک قابل تنظیم       3P  ,   200A   ,   36kA         ",brand,0
+"کلید اتوماتیک قابل تنظیم       3P  ,   250A   ,   36kA      ",brand,0
+" کلید اتوماتیک قابل تنظیمP  ,   400A   ,   50kA     3",brand,0
+"کلید اتوماتیک قابل تنظیمP  ,   630A   ,   50kA     3",brand,0
+"کلید اتوماتیک قابل تنظیمP  ,   800A   ,   50kA     3",brand,0
+"کلید اتوماتیک قابل تنظیمP  ,   1000A  ,  70kA     3",brand,0
+"کلید اتوماتیک قابل تنظیمP  ,   1250A ,   70kA     3",brand,0
+"کلید اتوماتیک قابل تنظیمP  ,   1600A ,   100kA   3",brand,0
+"کلید اتوماتیک قابل تنظیمP  ,   100A   ,    36kA       3",brand,0
+"کلید اتوماتیک قابل تنظیمP  ,   125A   ,    36kA       3",brand,0
+"کلید اتوماتیک فیکس          3P  ,    16A     ,    16KA       ",brand,0
+"کلید اتوماتیک فیکس         3P  ,    20A     ,    16KA       ",brand,0
+" کلید اتوماتیک فیکس       3P  ,    25A    ,     16KA      ",brand,0
+" کلید اتوماتیک فیکس      3P  ,     32A   ,     16KA      ",brand,0
+" کلید اتوماتیک فیکس      3P  ,     40A    ,     16KA     ",brand,0
+"  کلید اتوماتیک فیکس       3P  ,     50A    ,    16KA     ",brand,0
+"کلید اتوماتیک فیکس      3P  ,     63A    ,    16KA       ",brand,0
+"کلید اتوماتیک فیکس      3P  ,     80A    ,    16KA       ",brand,0
+" کلید اتوماتیک فیکس     3P  ,     100A ,     16KA       ",brand,0
+" کلید اتوماتیک فیکس    3P  ,    125A  ,     16KA       ",brand,0
+"   کلید اتوماتیک فیکس     3P  ,    160A ,      16KA      ",brand,0
+    LED   چراغ  سیگنال زرد    ,brand,0
+  LED  چراغ سیگنال قرمز,brand,0
+  LED   چراغ سیگنال سبز,brand,0
+کلید مینیاتوری  B    1P      10KA     2  A  ,brand,0
+کلید مینیاتوری  B    1P      10KA     4  A  ,brand,0
+کلید مینیاتوری  B    1P      10KA     6  A  ,brand,0
+ کلید مینیاتوری  B    1P      10KA     10A ,brand,0
+کلید مینیاتوری  B    1P      10KA     16A  ,brand,0
+کلید مینیاتوری  B    1P      10KA     20A  ,brand,0
+کلید مینیاتوری  B    1P      10KA     25A  ,brand,0
+ کلید مینیاتوری B    1P      10KA     32A  ,brand,0
+ کلید مینیاتوری  B    1P      10KA     40A  ,brand,0
+کلید مینیاتوری  B    1P      6  KA     50A  ,brand,0
+کلید مینیاتوری  B    1P      6  KA     63A  ,brand,0
+  کلید مینیاتوری B    1P+N  10KA    6  A ,brand,0
+کلید مینیاتوری  B    1P+N  10KA    10A  ,brand,0
+کلید مینیاتوری  B    1P+N  10KA    16A  ,brand,0
+ کلید مینیاتوری  B    1P+N  10KA    20A ,brand,0
+کلید مینیاتوری  B    1P+N  10KA    25A  ,brand,0
+کلید مینیاتوری  B    1P+N  10KA    32A  ,brand,0
+کلید مینیاتوری  B    1P+N  10KA    40A  ,brand,0
+کلید مینیاتوری  B    1P+N  6  KA    50A  ,brand,0
+کلید مینیاتوری  B    1P+N  6  KA    63A  ,brand,0
+ کلید مینیاتوری  B    2P      10KA    6  A ,brand,0
+کلید مینیاتوری  B    2P      10KA    10A  ,brand,0
+کلید مینیاتوری  B    2P      10KA    16A  ,brand,0
+کلید مینیاتوری  B    2P      10KA    20A  ,brand,0
+کلید مینیاتوری  B    2P      10KA    25A  ,brand,0
+ کلید مینیاتوری B    2P      10KA    32A  ,brand,0
+کلید مینیاتوری  B    2P      10KA    40A  ,brand,0
+ کلید مینیاتوری B    2P      6  KA    50A  ,brand,0
+کلید مینیاتوری B    2P      6  KA    63A  ,brand,0
+کلید مینیاتوری  B    3P      10KA    6  A  ,brand,0
+کلید مینیاتوری  B    3P      10KA    10A  ,brand,0
+کلید مینیاتوری  B    3P      10KA    16A  ,brand,0
+کلید مینیاتوری  B    3P      10KA    20A  ,brand,0
+کلید مینیاتوری  B    3P      10KA    25A  ,brand,0
+کلید مینیاتوری  B    3P      10KA    32A  ,brand,0
+کلید مینیاتوری  B    3P      10KA    40A  ,brand,0
+کلید مینیاتوری  B    3P      6  KA    50A  ,brand,0
+کلید مینیاتوری  B    3P      6  KA    63A  ,brand,0
+کلید مینیاتوری  B    3P+N  10KA    6A    ,brand,0
+کلید مینیاتوری  B    3P+N  10KA    10A  ,brand,0
+کلید مینیاتوری  B    3P+N  10KA    16A  ,brand,0
+کلید مینیاتوری  B    3P+N  10KA    20A  ,brand,0
+کلید مینیاتوری  B    3P+N  10KA    25A  ,brand,0
+کلید مینیاتوری  B    3P+N  10KA    32A  ,brand,0
+کلید مینیاتوری  B    3P+N  10KA    40A  ,brand,0
+کلید مینیاتوری B    3P+N  6  KA    50A   ,brand,0
+ کلید مینیاتوری B    3P+N  6  KA    63A   ,brand,0
+کلید مینیاتوری  C    1P      10KA    0/5A ,brand,0
+کلید مینیاتوری  C    1P      10KA    1  A  ,brand,0
+کلید مینیاتوری  C    1P      10KA    1/6A ,brand,0
+کلید مینیاتوری  C    1P      10KA    2  A  ,brand,0
+کلید مینیاتوری  C    1P      10KA    4  A  ,brand,0
+کلید مینیاتوری  C    1P      10KA    6  A  ,brand,0
+کلید مینیاتوری  C    1P      10KA    10A  ,brand,0
+کلید مینیاتوری  C    1P      10KA    16A  ,brand,0
+کلید مینیاتوری  C    1P      10KA    20A  ,brand,0
+کلید مینیاتوری  C    1P      10KA    25A  ,brand,0
+ کلید مینیاتوری  C    1P      10KA    32A ,brand,0
+ کلید مینیاتوری C    1P      10KA    40A  ,brand,0
+ کلید مینیاتوری  C    1P      6  KA    50A ,brand,0
+کلید مینیاتوری  C    1P      6  KA    63A  ,brand,0
+کلید مینیاتوری  C    1P      15KA    80A  ,brand,0
+کلید مینیاتوری  C    1P      15KA    100A ,brand,0
+کلید مینیاتوری  C    1P      15KA    125A ,brand,0
+کلید مینیاتوری  C    1P+N  10KA    0/5A ,brand,0
+کلید مینیاتوری  C    1P+N  10KA    1A    ,brand,0
+کلید مینیاتوری  C    1P+N  10KA    1/6A ,brand,0
+ کلید مینیاتوری  C    1P+N  10KA    2A   ,brand,0
+کلید مینیاتوری  C    1P+N  10KA    4A    ,brand,0
+کلید مینیاتوری  C    1P+N  10KA    6A    ,brand,0
+کلید مینیاتوری  C    1P+N  10KA    10A  ,brand,0
+کلید مینیاتوری  C    1P+N  10KA    16A  ,brand,0
+کلید مینیاتوری  C    1P+N  10KA    20A  ,brand,0
+کلید مینیاتوری  C    1P+N  10KA    25A  ,brand,0
+کلید مینیاتوری  C    1P+N  10KA    32A  ,brand,0
+کلید مینیاتوری  C    1P+N  10KA    40A  ,brand,0
+کلید مینیاتوری  C    1P+N  6KA      50A  ,brand,0
+کلید مینیاتوری  C    1P+N  6KA      63A  ,brand,0
+کلید مینیاتوری  C    2P      10KA    0/5A  ,brand,0
+کلید مینیاتوری  C    2P      10KA     1  A  ,brand,0
+کلید مینیاتوری  C    2P      10KA     1/6A ,brand,0
+کلید مینیاتوری  C    2P      10KA     2  A  ,brand,0
+کلید مینیاتوری  C    2P      10KA     4  A  ,brand,0
+کلید مینیاتوری  C    2P      10KA     6  A  ,brand,0
+کلید مینیاتوری  C    2P      10KA     10A  ,brand,0
+کلید مینیاتوری  C    2P      10KA     16A  ,brand,0
+کلید مینیاتوری  C    2P      10KA     20A  ,brand,0
+کلید مینیاتوری  C    2P      10KA     25A  ,brand,0
+کلید مینیاتوری  C    2P      10KA     32A  ,brand,0
+کلید مینیاتوری  C    2P      10KA     40A  ,brand,0
+کلید مینیاتوری  C    2P      6  KA     50A  ,brand,0
+کلید مینیاتوری  C    2P      6  KA     63A  ,brand,0
+کلید مینیاتوری  C    2P      10  KA   63A  ,brand,0
+کلید مینیاتوری  C    3P      10KA     0/5A ,brand,0
+کلید مینیاتوری  C    3P      10KA     1  A  ,brand,0
+کلید مینیاتوری  C    3P      10KA     1/6A ,brand,0
+کلید مینیاتوری  C    3P      10KA     2  A  ,brand,0
+کلید مینیاتوری C    3P      10KA     4  A  ,brand,0
+کلید مینیاتوری  C    3P      10KA     6  A  ,brand,0
+ کلید مینیاتوری  C    3P      10KA     10A ,brand,0
+ کلید مینیاتوری  C    3P      10KA    13A  ,brand,0
+کلید مینیاتوری  C    3P      10KA    16A   ,brand,0
+کلید مینیاتوری  C    3P      10KA    20A   ,brand,0
+کلید مینیاتوری  C    3P      10KA    25A   ,brand,0
+کلید مینیاتوری  C    3P      10KA    32A   ,brand,0
+کلید مینیاتوری  C    3P      10KA    40A   ,brand,0
+کلید مینیاتوری  C    3P      6  KA    50A   ,brand,0
+ کلید مینیاتوری  C    3P      6  KA    63A  ,brand,0
+کلید مینیاتوری  C    3P      15KA    80A   ,brand,0
+کلید مینیاتوری  C    3P      15KA    100A ,brand,0
+ کلید مینیاتوری  C    3P      15KA   125A ,brand,0
+کلید مینیاتوری  C    3P+N  10KA   0/5A  ,brand,0
+کلید مینیاتوری  C    3P+N  10KA   1  A   ,brand,0
+کلید مینیاتوری  C    3P+N  10KA   1/6A  ,brand,0
+  C    3P+N  10KA   2  A   کلید مینیاتوری,brand,0
+  C    3P+N  10KA   4  A   کلید مینیاتوری,brand,0
+  C    3P+N  10KA   6  A   کلید مینیاتوری,brand,0
+  C    3P+N  10KA   10A   کلید مینیاتوری,brand,0
+  C    3P+N  10KA   16A   کلید مینیاتوری,brand,0
+  C    3P+N  10KA   20A   کلید مینیاتوری,brand,0
+  C    3P+N  10KA   25A   کلید مینیاتوری,brand,0
+  C    3P+N  10KA   32A   کلید مینیاتوری,brand,0
+  C    3P+N  10KA   40A   کلید مینیاتوری,brand,0
+  C    3P+N  10KA   50A   کلید مینیاتوری,brand,0
+  C    3P+N  6KA     50A   کلید مینیاتوری,brand,0
+  C    3P+N  6KA     63A   کلید مینیاتوری,brand,0
+ RCCB    1P+N   AC   0.03    16 A   کلید جریان نشتی,brand,0
+ RCCB    1P+N   AC   0.03    25 A   کلید جریان نشتی,brand,0
+ RCCB     1P+N   A     0.03    25 A   کلید جریان نشتی,brand,0
+ RCCB    1P+N   AC   0.03    32 A   کلید جریان نشتی,brand,0
+ RCCB     1P+N   AC   0.03    40 A   کلید جریان نشتی,brand,0
+ RCCB    1P+N   AC   0.03    63 A   کلید جریان نشتی,brand,0
+ RCCB     1P+N   AC   0.03    80 A   کلید جریان نشتی,brand,0
+ RCCB    1P+N   AC   0.03   100A   کلید جریان نشتی,brand,0
+ RCCB     1P+N   AC   0.5      16A     کلید جریان نشتی,brand,0
+ RCCB     1P+N   AC   0.5      63A     کلید جریان نشتی,brand,0
+ RCCB     3P+N   AC   0.03     16 A   کلید جریان نشتی,brand,0
+ RCCB     3P+N   AC   0.03     25 A   کلید جریان نشتی,brand,0
+ RCCB     3P+N   AC   0.03     32 A   کلید جریان نشتی,brand,0
+ RCCB     3P+N   AC   0.03     40 A   کلید جریان نشتی,brand,0
+ RCCB     3P+N   AC   0.03     50 A   کلید جریان نشتی,brand,0
+ RCCB     3P+N   AC   0.03     63 A   کلید جریان نشتی,brand,0
+ RCCB     3P+N   AC   0.03     80 A   کلید جریان نشتی,brand,0
+ RCCB     3P+N   AC   0.03     100A  کلید جریان نشتی,brand,0
+ RCCB      3P+N    B   0.03     25 A   کلید جریان نشتی,brand,0
+کنتاکتور   9A,brand,0
+کنتاکتور   12A,brand,0
+کنتاکتور   16A,brand,0
+کنتاکتور   18A,brand,0
+کنتاکتور   25A,brand,0
+کنتاکتور   32A,brand,0
+کنتاکتور   40A,brand,0
+کنتاکتور   50A,brand,0
+کنتاکتور   65A,brand,0
+کنتاکتور   75A,brand,0
+کنتاکتور   85A,brand,0
+کنتاکتور   100A,brand,0
+کنتاکتور   115A,brand,0
+کنتاکتور   130A,brand,0
+کنتاکتور   150A,brand,0
+کنتاکتور   185A,brand,0
+کنتاکتور   225A,brand,0
+کنتاکتور   265A,brand,0
+کنتاکتور   300A,brand,0
+کنتاکتور   400A,brand,0
+کنتاکتور   500A,brand,0
+کنتاکتور   630A,brand,0
+کنتاکتور   800A,brand,0
+ کنتاکتور خازنی                            CNNK 12KVAR   11                                ,brand,0
+    کنتاکتور خازنی                             CNNK 15KVAR  11                                  ,brand,0
+   کنتاکتور خازنی                           CNNK 20KVAR   10                              ,brand,0
+کنتاکتور خازنی                   CNNK 25KVAR   10                                 ,brand,0
+  کنتاکتور خازنی                             CNNK 30KVAR   10                               ,brand,0
+کنتاکتور خازنی تیپ بزرگ                    00 CNKM 40KVAR  ,brand,0
+کنتاکتور خازنی                                  10 CNNK 40KVAR ,brand,0
+    کنتاکتور خازنی تیپ بزرگ                   22 CNKM 40KVAR  ,brand,0
+کنتاکتور خازنی تیپ بزرگ                   00 CNKM 50KVAR  ,brand,0
+ کنتاکتور خازنی                       CNNK 50KVAR   10                               ,brand,0
+کنتاکتور خازنی تیپ بزرگ                   22 CNKM 50 KVAR ,brand,0
+کنتاکتور خازنی تیپ بزرگ                   10 CNNK 60 KVAR ,brand,0
+  کنتاکتور خازنی                          CNNK 60 KVAR  22                               ,brand,0
+کنتاکتور خازنی تیپ بزرگ                   22 CNKM 60 KVAR ,brand,0
+CP   LPC  2/5kVAR     440V   50HZ     خازن سیلندری خشک,brand,0
+CP   LPC   3kVAR       440V   50HZ     خازن سیلندری خشک,brand,0
+CP   LPC   4kVAR       440V   50HZ     خازن سیلندری خشک,brand,0
+CP   LPC   5kVAR       440V   50HZ     خازن سیلندری خشک,brand,0
+CP   LPC   10kVAR     440V   50HZ     خازن سیلندری خشک,brand,0
+CP   LPC   12/5kVAR  440V   50HZ     خازن سیلندری خشک,brand,0
+CP   LPC   15kVAR     440V   50HZ     خازن سیلندری خشک,brand,0
+CP   LPC   20kVAR     440V   50HZ     خازن سیلندری خشک,brand,0
+CP   LPC   25kVAR     440V   50HZ     خازن سیلندری خشک,brand,0
+CP   LPC   30kVAR     440V   50HZ     خازن سیلندری خشک,brand,0
+CP   LPC   40kVAR     440V   50HZ     خازن سیلندری خشک,brand,0
+CP   LPC   50kVAR     440V   50HZ     خازن سیلندری خشک,brand,0
+" کلید شستی  ، استپ اضطراری  ،  ســاد ه  ،  سـر قارچـی  ،  بدون کنتاکت",brand,0
+" کـلید استپ اضطراری  ،  قفل شو چرخشی ،  سـر قارچی   ،  بدون کنتاکت",brand,0
+TM 40           6.3-10.0                 CNN9-CNN40     رله حرارتی,brand,0
+TM 40           8.0-12.5                 CNN9-CNN40     رله حرارتی,brand,0
+TM 40           10.0-16.0               CNN9-CNN40     رله حرارتی,brand,0
+TM 40           12.5-20.0               CNN9-CNN40     رله حرارتی,brand,0
+TM 40           16.0-25.0               CNN9-CNN40     رله حرارتی,brand,0
+TM 40           22.0-30.0               CNN9-CNN40     رله حرارتی,brand,0
+TM 40           28.0-38.0               CNN9-CNN40     رله حرارتی,brand,0
+TRM 75-60    25-40                     CNM45-CNM50 رله حرارتی,brand,0
+TRM 75-60    32-50                     CNM45-CNM50 رله حرارتی,brand,0
+TRM 75-60    40-57                     CNM45-CNM50 رله حرارتی,brand,0
+TRM 75-60    50-63                     CNM45-CNM50 رله حرارتی,brand,0
+TRM 75-N90  57-70                    CNN80-CNN100 رله حرارتی,brand,0
+TRM 75-N90  63-80                    CNN80-CNN100 رله حرارتی,brand,0
+TRM 75-110  25-40                    CNM75-CNM110 رله حرارتی,brand,0
+TRM 75-110  32-50                    CNM75-CNM110 رله حرارتی,brand,0
+TRM 75-110  40-57                    CNM75-CNM110 رله حرارتی,brand,0
+TRM 75-110  50-63                    CNM75-CNM110 رله حرارتی,brand,0
+TRM 75-110  57-70                     CNM75-CNM110 رله حرارتی,brand,0
+TRM 75-110  63-80                     CNM75-CNM110 رله حرارتی,brand,0
+كلید حرارتي   MPCB MSP0       (0/4-0/6) 0/6A ,brand,0
+كلید حرارتي    MPCB MSP0       (0/6- 1 )   1 A ,brand,0
+كلید حرارتي   MPCB MSP0       (1 - 1/6 ) 1/6A ,brand,0
+كلید حرارتي   MPCB MSP0       (1/6-2/4) 2/4A ,brand,0
+كلید حرارتي   MPCB MSP0       (2/4 - 4 )    4A ,brand,0
+كلید حرارتي    MPCB MSP0        ( 4  -  6 )   6A ,brand,0
+كلید حرارتي   MPCB MSP0        ( 6 -  10)  10A ,brand,0
+كلید حرارتي   MPCB MSP0        (10 - 16) 16A ,brand,0
+كلید حرارتي   MPCB MSP0        (14 - 20) 20A ,brand,0
+كلید حرارتي   MPCB MSP0        (18 - 25) 25A ,brand,0
+كلید حرارتي  MPCB MSP1        (22 - 32 ) 32A ,brand,0
+كلید حرارتي   MPCB MSP1        (28 - 40 ) 40A,brand,0
+كلید حرارتي  MPCB MSP1         (36 - 52 ) 52A,brand,0
+switch  disconnector    LBS  160   3P   کلید گردان قدرت یکطرفه ,brand,0
+switch  disconnector    LBS  250   3P   کلید گردان قدرت یکطرفه,brand,0
+switch  disconnector    LBS  400   3P   کلید گردان قدرت یکطرفه,brand,0
+switch  disconnector    LBS  630   3P   کلید گردان قدرت یکطرفه,brand,0
+switch  disconnector    LBS  800   3P   کلید گردان قدرت یکطرفه,brand,0
+switch  disconnector    LBS 1000  3P   کلید گردان قدرت یکطرفه,brand,0
+switch  disconnector    LBS 1250  3P   کلید گردان قدرت یکطرفه,brand,0
+switch  disconnector    LBS 1600  3P   کلید گردان قدرت یکطرفه,brand,0
+switch  disconnector    LBS 2000  3P   کلید گردان قدرت یکطرفه,brand,0
+switch  disconnector    LBS 2500  3P   کلید گردان قدرت یکطرفه,brand,0
+Switch disconnector    LBS 160    4P    کلید گردان قدرت یکطرفه,brand,0
+Switch disconnector    LBS 250    4P    کلید گردان قدرت یکطرفه,brand,0
+switch  disconnector    LBS 400    4P   کلید گردان قدرت یکطرفه,brand,0
+Switch disconnector    LBS 630    4P    کلید گردان قدرت یکطرفه,brand,0
+switch  disconnector    LBS 800    4P   کلید گردان قدرت یکطرفه,brand,0
+switch  disconnector    LBS 1250  4P   کلید گردان قدرت یکطرفه,brand,0
+switch  disconnector    LBS 1600  4P   کلید گردان قدرت یکطرفه,brand,0
+switch  disconnector    LBS 2500  4P   کلید گردان قدرت یکطرفه,brand,0
+Cam  switch   CS 32A  1P            کلید گردان      ,brand,0
+Cam  switch   CS 80A  1P            کلید گردان      ,brand,0
+Cam  switch   CS 16A  1P    کلید گردان روکار      ,brand,0
+Cam  switch   CS 25A  1P    کلید گردان روکار      ,brand,0
+Cam  switch   CS 16A  2P    کلید گردان روکار      ,brand,0
+Cam  switch   CS 25A  2P    کلید گردان روکار      ,brand,0
+Cam  switch   CS 10A  3P    کلید گردان روکار      ,brand,0
+Cam  switch   CS 25A  3P    کلید گردان روکار      ,brand,0
+Cam  switch   CS 10A  4P    کلید گردان روکار      ,brand,0
+Cam  switch   CS 32A  1P    کلید گردان روکار استپ اضطراری     ,brand,0
+Cam  switch   CS 40A  1P    کلید گردان روکار استپ اضطراری     ,brand,0
+2A    D       فیوز فشنگی     ,brand,0
+4A    D       فیوز فشنگی,brand,0
+6A    D       فیوز فشنگی,brand,0
+10A  D       فیوز فشنگی ,brand,0
+16A  D       فیوز فشنگی ,brand,0
+20A  D       فیوز فشنگی,brand,0
+25A  D       فیوز فشنگی,brand,0
+35A  D       فیوز فشنگی,brand,0
+50A  D       فیوز فشنگی,brand,0
+63A  D       فیوز فشنگی,brand,0
+ كلید فیوز افقي      8M8-M  ا          3P   160A,brand,0
+ كلید فیوز افقي  10M10-M  ا              3P   250A  ,brand,0
+ كلید فیوز افقي  10M10-M  ا              3P   400A,brand,0
+ فیوز سیلندری   8 Gg        اA1,brand,0
+ فیوز  سیلندری  8 Gg        اA2,brand,0
+ فیوز  سیلندری  8 Gg        اA4,brand,0
+ فیوز  سیلندری  8 Gg        اA6,brand,0
+ فیوز  سیلندری  8 Gg        اA8,brand,0
+ فیوز  سیلندری  8 Gg      اA10,brand,0
+ فیوز  سیلندری  8 Gg      اA12,brand,0
+ فیوز  سیلندری  8 Gg      اA16,brand,0
+ فیوز  سیلندری  8 Gg      اA20,brand,0
+ فیوز  سیلندری  8 Gg      اA25,brand,0
+ فیوز  سیلندری10 Gg     اA0.5,brand,0
+ فیوز  سیلندری10 Gg        اA1,brand,0
+ فیوز  سیلندری10 Gg        اA2,brand,0
+ فیوز  سیلندری10 Gg        اA4,brand,0
+ فیوز  سیلندری10 Gg        اA6,brand,0
+ فیوز  سیلندری10 Gg        اA8,brand,0
+ فیوز  سیلندری10 Gg      اA10,brand,0
+ فیوز  سیلندری10 Gg      اA12,brand,0
+ فیوز  سیلندری10 Gg      اA16,brand,0
+ فیوز  سیلندری10 Gg      اA20,brand,0
+ فیوز  سیلندری10 Gg      اA25,brand,0
+ فیوز  سیلندری10 Gg      اA32,brand,0
+ فیوز  سیلندری14 Gg        اA2,brand,0
+ فیوز  سیلندری14 Gg        اA4,brand,0
+ فیوز  سیلندری14 Gg        اA6,brand,0
+ فیوز  سیلندری14 Gg        اA8,brand,0
+ فیوز  سیلندری14 Gg      اA10,brand,0
+ فیوز  سیلندری14 Gg      اA12,brand,0
+ فیوز  سیلندری14 Gg      اA16,brand,0
+ فیوز  سیلندری14 Gg      اA20,brand,0
+ فیوز  سیلندری14 Gg      اA25,brand,0
+ فیوز  سیلندری14 Gg      اA32,brand,0
+ فیوز  سیلندری14 Gg      اA40,brand,0
+ فیوز  سیلندری14 Gg      اA50,brand,0
+ فیوز  سیلندری22 Gg      اA16,brand,0
+ فیوز  سیلندری22 Gg      اA20,brand,0
+ فیوز  سیلندری22 Gg      اA25,brand,0
+ فیوز  سیلندری22 Gg      اA32,brand,0
+ فیوز  سیلندری22 Gg      اA40,brand,0
+ فیوز  سیلندری22 Gg      اA50,brand,0
+ فیوز  سیلندری22 Gg      اA63,brand,0
+ فیوز  سیلندری22 Gg      اA80,brand,0
+ فیوز  سیلندری22 Gg   اA100,brand,0
+"FuseVV  7,2kV   2A      50N   192   فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   4A      50N   192   فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   6A      50N   192   فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   10A    50N   192   فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   16A    50N   192   فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   20A    50N   192   فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   25A    50N   192   فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   32A    50N   192   فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   40A    50N   192   فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   50A    50N   192   فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   63A    50N   192   فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   80A    50N   192   فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   100A  50N   192   فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   125A  50N   192   فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   160A  50N   192   فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   2A      50N   292   فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   4A      50N   292   فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   6A      50N   292   فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   10A    50N   292   فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   16A    50N    292  فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   20A    50N    292  فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   25A    50N    292  فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   32A    50N    292  فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   40A    50N    292  فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   50A    50N    292  فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   63A    50N    292  فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   80A    50N    292  فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   100A  50N    292  فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   125A  50N    292  فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   160A  50N    292  فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   200A  50N    292  فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   250A  50N    292  فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV    80A   50N    442  فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   100A  50N    442  فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   125A  50N    442  فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   160A  50N    442  فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   200A  50N    442  فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   250A  50N    442  فیوز فشار متوسط",brand,0
+"FuseVV  7,2kV   315A  50N    442  فیوز فشار متوسط",brand,0
+FuseVV  12kV    2A       50N   292   فیوز فشار متوسط,brand,0
+FuseVV  12kV    4A       50N   292   فیوز فشار متوسط,brand,0
+FuseVV  12kV    6A       50N   292   فیوز فشار متوسط,brand,0
+FuseVV  12kV    10A     50N   292   فیوز فشار متوسط,brand,0
+FuseVV  12kV    16A     50N   292   فیوز فشار متوسط,brand,0
+FuseVV  12kV    20A     50N   292   فیوز فشار متوسط,brand,0
+FuseVV   12kV   25A     50N   292   فیوز فشار متوسط,brand,0
+FuseVV  12kV    32A     50N   292   فیوز فشار متوسط,brand,0
+FuseVV  12kV    40A     50N   292   فیوز فشار متوسط,brand,0
+FuseVV 12kV    50A    50N    292    فیوز فشار متوسط,brand,0
+FuseVV 12kV    63A    50N    292    فیوز فشار متوسط,brand,0
+FuseVV 12kV    80A    50N    292    فیوز فشار متوسط,brand,0
+FuseVV 12kV    100A  50N    292    فیوز فشار متوسط,brand,0
+FuseVV 12kV    125A  50N    292    فیوز فشار متوسط,brand,0
+FuseVV 12kV    160A  50N    292    فیوز فشار متوسط,brand,0
+FuseVV 12kV    2A      50N    192    فیوز فشار متوسط,brand,0
+FuseVV 12kV    4A      50N    192    فیوز فشار متوسط,brand,0
+FuseVV 12kV    6A      50N    192    فیوز فشار متوسط,brand,0
+FuseVV 12kV    10A    50N    192    فیوز فشار متوسط,brand,0
+FuseVV 12kV    16A    50N    192    فیوز فشار متوسط,brand,0
+FuseVV 12kV    20A    50N    192    فیوز فشار متوسط,brand,0
+FuseVV 12kV   25A     50N    192    فیوز فشار متوسط,brand,0
+FuseVV 12kV   32A     50N    192    فیوز فشار متوسط,brand,0
+FuseVV 12kV   40A     50N    192    فیوز فشار متوسط,brand,0
+FuseVV 12kV   50A     50N    192    فیوز فشار متوسط,brand,0
+FuseVV 12kV   2A       50N     442   فیوز فشار متوسط,brand,0
+FuseVV 12kV   4A       50N     442   فیوز فشار متوسط,brand,0
+FuseVV 12kV   6A       50N     442   فیوز فشار متوسط,brand,0
+FuseVV 12kV   10A     50N    442    فیوز فشار متوسط,brand,0
+FuseVV 12kV   16A     50N    442    فیوز فشار متوسط,brand,0
+FuseVV 12kV   20A     50N    442    فیوز فشار متوسط,brand,0
+FuseVV 12kV   25A     50N    442    فیوز فشار متوسط,brand,0
+FuseVV 12kV   32A     50N    442    فیوز فشار متوسط,brand,0
+FuseVV 12kV   40A     50N    442    فیوز فشار متوسط,brand,0
+FuseVV 12kV   50A     50N    442    فیوز فشار متوسط,brand,0
+FuseVV 12kV   63A     50N    442    فیوز فشار متوسط,brand,0
+FuseVV 12kV   80A     50N    442    فیوز فشار متوسط,brand,0
+FuseVV 12kV  100A    50N    442    فیوز فشار متوسط,brand,0
+FuseVV 12kV   125A   50N    442    فیوز فشار متوسط,brand,0
+FuseVV 12kV   160A   50N    442    فیوز فشار متوسط,brand,0
+FuseVV 12kV    200A  50N    442    فیوز فشار متوسط,brand,0
+FuseVV 12kV    160A  50N    537    فیوز فشار متوسط,brand,0
+FuseVV 12kV    200A  50N    537    فیوز فشار متوسط,brand,0
+FuseVV 12kV    250A  50N    537    فیوز فشار متوسط,brand,0
+FuseVV 24kV    2A      50N     442    فیوز فشار متوسط,brand,0
+FuseVV 24kV     4A     50N     442    فیوز فشار متوسط,brand,0
+FuseVV 24kV     6A     50N     442    فیوز فشار متوسط,brand,0
+FuseVV 24kV    10A    50N     442    فیوز فشار متوسط,brand,0
+FuseVV 24kV    16A    50N     442    فیوز فشار متوسط,brand,0
+FuseVV 24kV    20A    50N     442    فیوز فشار متوسط,brand,0
+FuseVV 24kV    25A    50N     442    فیوز فشار متوسط,brand,0
+FuseVV 24kV    32A    50N     442    فیوز فشار متوسط,brand,0
+FuseVV 24kV    40A    50N     442    فیوز فشار متوسط,brand,0
+FuseVV 24kV    50A    50N     442    فیوز فشار متوسط,brand,0
+FuseVV 24kV    63A    50N     442    فیوز فشار متوسط,brand,0
+FuseVV 24kV    80A    50N     442    فیوز فشار متوسط,brand,0
+FuseVV 24kV   100A   50N     442    فیوز فشار متوسط,brand,0
+FuseVV 24kV   125A   50N    442  فیوز فشار متوسط,brand,0
+FuseVV 24kV   2A       50N    292  فیوز فشار متوسط,brand,0
+FuseVV 24kV   4A       50N    292  فیوز فشار متوسط,brand,0
+FuseVV 24kV   6A       50N    292  فیوز فشار متوسط,brand,0
+FuseVV 24kV   10A     50N    292  فیوز فشار متوسط,brand,0
+FuseVV 24kV   16A     50N    292  فیوز فشار متوسط,brand,0
+FuseVV 24kV   20A     50N    292  فیوز فشار متوسط,brand,0
+FuseVV 24kV   25A     50N    292  فیوز فشار متوسط,brand,0
+FuseVV 24kV   32A     50N    292  فیوز فشار متوسط,brand,0
+FuseVV 24kV   40A     50N    292  فیوز فشار متوسط ,brand,0
+FuseVV 24kV   50A     50N    292  فیوز فشار متوسط,brand,0
+FuseVV 24kV   63A     50N    292  فیوز فشار متوسط,brand,0
+FuseVV 24kV   2A       50N    537  فیوز فشار متوسط,brand,0
+FuseVV 24kV   4A       50N    537  فیوز فشار متوسط,brand,0
+FuseVV 24kV   6A       50N    537  فیوز فشار متوسط,brand,0
+FuseVV 24kV   10A     50N    537  فیوز فشار متوسط,brand,0
+FuseVV 24kV   16A     50N    537  فیوز فشار متوسط,brand,0
+FuseVV 24kV   20A     50N    537  فیوز فشار متوسط,brand,0
+FuseVV 24kV   25A     50N    537  فیوز فشار متوسط,brand,0
+FuseVV 24kV   32A     50N    537  فیوز فشار متوسط,brand,0
+FuseVV 24kV   40A     50N    537  فیوز فشار متوسط,brand,0
+FuseVV 24kV   50A     50N    537  فیوز فشار متوسط,brand,0
+FuseVV 24kV   63A     50N    537  فیوز فشار متوسط,brand,0
+FuseVV 24kV   80A     50N    537  فیوز فشار متوسط,brand,0
+FuseVV 24kV   100A   50N    537  فیوز فشار متوسط,brand,0
+FuseVV 24kV   125A   50N    537  فیوز فشار متوسط,brand,0
+FuseVV 24kV   160A   50N    537  فیوز فشار متوسط,brand,0
+FuseVV 36 kV   2A      50N     537 فیوز فشار متوسط,brand,0
+FuseVV 36 kV   4A      50N     537 فیوز فشار متوسط,brand,0
+FuseVV 36 kV   6A      50N     537 فیوز فشار متوسط,brand,0
+FuseVV 36 kV   10A    50N     537 فیوز فشار متوسط,brand,0
+FuseVV 36 kV   16A    50N     537 فیوز فشار متوسط,brand,0
+FuseVV 36 kV   20A    50N     537 فیوز فشار متوسط,brand,0
+FuseVV 36 kV   25A    50N     537 فیوز فشار متوسط,brand,0
+FuseVV 36 kV   32A    50N     537 فیوز فشار متوسط,brand,0
+FuseVV 36 kV   40A    50N     537 فیوز فشار متوسط,brand,0
+FuseVV 36 kV   50A    50N     537 فیوز فشار متوسط,brand,0
+FuseVV 36 kV   63A    50N     537 فیوز فشار متوسط,brand,0
+FuseVV 36 kV   2A      50N     442 فیوز فشار متوسط,brand,0
+FuseVV 36 kV   4A      50N     442 فیوز فشار متوسط,brand,0
+FuseVV 36 kV   6A      50N     442 فیوز فشار متوسط,brand,0
+موتورکلیداتوماتیک                                          MO2   250AC    230-240V,brand,0
+موتورکلیداتوماتیک                                          MO2   630AC    100-240V,brand,0
+موتورکلیداتوماتیک                                MO2   800-1000AC    100-240V,brand,0
+موتورکلیداتوماتیک                              MO2   1250-1600AC    230-240V,brand,0
+" کـلید استپ اضطراری، قفل شو کشویی، سر قارچی با قالپاق ، بدون کنتاکت",brand,0
+" کلید شستی دوبل  سفید - استپ استارت ساده  ،  بدون کنتاکت ، بدون چراغ",brand,0
+" کلید  شستی  دوبل  مشکی      ،   استپ  استارت  ساده   ،     بدون کنتاکت",brand,0
+" کلید شستی قرمز     ،     سرتخت     ،       بدون کنتاکت      ،    چراغ خور",brand,0
+" کلید شستی  سبز    ،        سرتخت   ،       بدون کنتاکت      ،    چراغ خور",brand,0
+" کلید شستی دوبل مشکی   ،  استپ استارت   ،  بدون کنتاکت   ،  چراغ خور",brand,0
+ کلید شستی سبز    -  لوله ای باکالیتی  - استارت - NO  - اCOMPACT,brand,0
+ کلید شستی قرمز   -  لوله ای باکالیتی  -  استپ  -  NC   -اCOMPACT,brand,0
+ کلید شستی قرمز - لوله ای باکالیتی -2 کنتاکت -NO+NC-اCOMPACT,brand,0
+ کلید 2 حالته   )1-0( سلکتوری بدون کنتاکت )30 درجه(  غیرقابل برگشت,brand,0
+ کلید 2 حالته   )1-0( سلکتوری بدون کنتاکت )30 درجه(       قابل برگشت,brand,0
+ کلید3حالته  )2-0-1( سلکتوری بدون کنتاکت ) 30 درجه( غیرقابل برگشت,brand,0
+ کلید3 حالته   )2-0-1 (سلکتوری بدون کنتاکت ) 30 درجه(    قابل برگشت,brand,0
+ کلید  کنتاکت  استارت    NO,brand,0
+ کلید  کنتاکت   استپ      NC,brand,0
+  DC   B  1P  6KA  6 A   کلید مینیاتوری,brand,0
+  DC   B  1P  6KA  10A  کلید مینیاتوری,brand,0
+  DC   B  1P  6KA  16A  کلید مینیاتوری,brand,0
+  DC   B  1P  6KA  20A  کلید مینیاتوری,brand,0
+  DC   B  1P  6KA  25A  کلید مینیاتوری,brand,0
+  DC   B  1P  6KA  32A  کلید مینیاتوری,brand,0
+ RC  C  1P  10KA  25A   کلید مینیاتوری فرمان پذیر,brand,0
+ RC  C  1P  10KA  32A   کلید مینیاتوری فرمان پذیر,brand,0
+ RC  C  1P  10KA  40A   کلید مینیاتوری فرمان پذیر,brand,0
+ RC  C  1P  10KA  50A   کلید مینیاتوری فرمان پذیر,brand,0
+ RC  C  1P  10KA  63A   کلید مینیاتوری فرمان پذیر,brand,0
+کلید خشک ایزولاتور     SV  1P   16 A,brand,0
+کلید خشک ایزولاتور     SV  1P   25 A,brand,0
+کلید خشک ایزولاتور     SV  1P   40 A,brand,0
+کلید خشک ایزولاتور     SV  1P   63 A,brand,0
+کلید خشک ایزولاتور     SV  1P   80 A,brand,0
+کلید خشک ایزولاتور    SV  1P   100A,brand,0
+کلید خشک ایزولاتور    SV  1P   125A,brand,0
+کلید خشک ایزولاتور     SV  2P   16 A,brand,0
+کلید خشک ایزولاتور     SV  2P   25 A,brand,0
+کلید خشک ایزولاتور     SV  2P   40 A,brand,0
+کلید خشک ایزولاتور     SV  2P   63 A,brand,0
+کلید خشک ایزولاتور     SV  2P   80 A,brand,0
+کلید خشک ایزولاتور    SV  2P   100A,brand,0
+کلید خشک ایزولاتور    SV  2P   125A,brand,0
+کلید خشک ایزولاتور     SV  3P   16 A,brand,0
+کلید خشک ایزولاتور     SV  3P   25 A,brand,0
+کلید خشک ایزولاتور     SV  3P   40 A,brand,0
+کلید خشک ایزولاتور     SV  3P   63 A,brand,0
+کلید خشک ایزولاتور     SV  3P   80 A,brand,0
+کلید خشک ایزولاتور    SV  3P   100A,brand,0
+کلید خشک ایزولاتور    SV  3P   125A,brand,0
+کلید خشک ایزولاتور     SV  4P   16 A,brand,0
+کلید خشک ایزولاتور     SV  4P   25 A,brand,0
+کلید خشک ایزولاتور     SV  4P   40 A,brand,0
+کلید خشک ایزولاتور     SV  4P   63 A,brand,0
+کلید خشک ایزولاتور     SV  4P   80 A,brand,0
+کلید خشک ایزولاتور    SV  4P   100A,brand,0
+کلید خشک ایزولاتور    SV  4P   125A,brand,0
+کنتاکت كمكي کلید جریان نشتی             RCCB    NO + NC ,brand,0
+RCBO  KZS  آ 1M     10KA    AC/C ( FN )  16اA   0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ 1M     10KA    AC/C ( FN )  25اA   0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ 1M     10KA    AC/C( FN )   32اA   0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ 1M     10KA    AC/C( FN )   40اA   0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ 1M   6 KA     A / C (1P+N)  6اA     0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ 1M   6 KA     A / C(1P+N)   10اA   0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ 1M   6 KA     A / C(1P+N)   16اA   0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ 1M   6 KA     A / C  (1P+N) 20اA   0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ 1M   6 KA     A / C (1P+N)  25اA   0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ1P+N   2M   10KA    A / B   6اA     0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ1P+N   2M   10KA    A / B   10اA   0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ1P+N   2M   10KA    A / B   16اA   0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ1P+N   2M   10KA    A / B   20اA   0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ1P+N   2M   10KA    A / B   25اA   0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS آ 1P+N   2M   10KA    A / B   32اA   0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ1P+N   2M   10KA    A / B    40اA  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ1P+N   2M   10KA    A / C    6ا A   0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ1P+N   2M   10KA    A / C   10اA   0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ1P+N   2M   10KA    A / C   16اA   0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ1P+N   2M   10KA    A / C    20اA  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ1P+N   2M   10KA    A / C  25اA  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZSآ  1P+N   2M   10KA    A / C    32اA  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ1P+N   2M   10KA    A / C    40اA  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ1P+N   2M   10KA    A / B    40اA   0/1  کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ2P       3M  10KA     A / B    16اA  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ2P       3M   10KA    A / B    25اA  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ2P       3M   10KA    A / C   16اA   0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ2P       3M   10KA    A / C   25اA   0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ3P       4M  10KA     AC/C   6ا A   0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ3P       4M  10KA     AC/C   10اA  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ3P       4M  10KA     AC/C   16اA  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ3P       4M  10KA     AC/C   20اA  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ3P       4M  10KA     AC/C   25اA  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ3P       4M  10KA     AC/C   32اA  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ3P+N   4M  10KA     AC/C    6ا A  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ3P+N   4M  10KA     AC/C   10اA  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ3P+N   4M  10KA     AC/C   16اA  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ3P+N   4M  10KA     AC/C   20اA  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ3P+N   4M  10KA     AC/C   25اA  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ3P+N   4M  10KA     AC/C   32اA  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ3P+N   4M  10KA     A / B    6ا A  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ3P+N   4M  10KA     A / B    10اA  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ3P+N   4M  10KA     A / B    16اA  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ3P+N   4M  10KA     A / B    20اA  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ3P+N   4M  10KA     A / B    25اA  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ3P+N   4M  10KA     A / B    32اA  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ3P+N   4M  10KA     A / C    6ا A   0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ3P+N   4M  10KA     A / C    10اA  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ3P+N   4M  10KA     A / C    16اA 0/03  کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS آ 3P+N   4M  10KA     A / C   20اA  0/03 کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS  آ3P+N   4M  10KA     A / C   25اA 0/03  کلید جریان نشتی تركیبي,brand,0
+RCBO  KZS آ 3P+N   4M  10KA    A / C   32اA 0/03   کلید جریان نشتی تركیبي,brand,0

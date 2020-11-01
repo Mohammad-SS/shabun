@@ -34,4 +34,4 @@ urlpatterns = [
     path("tools", FactorsView.ShowAllItems.as_view(), name="ShowAllTools"),
     path("tools/import", FactorsView.ImportItems.as_view(), name="ImportTools"),
 
-]
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
