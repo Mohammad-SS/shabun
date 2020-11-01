@@ -110,15 +110,59 @@
                         </small>
                     </div>
                 </div>
+            <div class="col-lg-3 form-group text-right">
+                    <input class="form-control" placeholder="متن مورد نظر را وارد کنید ..." id="search">
+                </div>
                 <div class="row">
-                        {% for item in items %}
-                    <div class="col-lg-4 form-group text-right">
-                        <label>
-                        <input type="checkbox" name="items" value="{{ item.pk }}">    {{ item.name }}
+                    <table class="table table-hover text-light" style="font-size: 13px !important;">
+                        <thead>
+                        <tr>
+                            <th scope="col">شماره</th>
+                            <th>انتخاب</th>
+                            <th scope="col">نام</th>
+                            <th scope="col">برند</th>
+                            <th scope="col">آخرین قیمت</th>
+                            <th scope="col">تاریخ آخرین قیمت</th>
+                            <th scope="col">تاریخ اضافه شدن</th>
 
-                        </label>
-                    </div>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for item in items %}
+                            <tr>
+
+                                <th scope="row">
+
+                                    {{ item.id }}
+
+                                </th>
+                                <td>
+                                    <input type="checkbox" name="items" value="{{ item.pk }}">
+                                </td>
+                                <td>
+                                    {{ item.name }}
+                                </td>
+                                <td>
+                                    <p style="max-width: 350px ; white-space: nowrap ; text-overflow: ellipsis ; overflow: hidden">
+
+                                        {{ item.brand }}
+                                    </p>
+                                </td>
+                                <td>
+                                    {{ item.lastPrice }}
+                                </td>
+                                <td>
+                                    {{ item.changeTimeJalali }}
+                                </td>
+                                <td>
+                                    {{ item.addTimeJalali }}
+                                </td>
+
+                            </tr>
                         {% endfor %}
+                        </tbody>
+                    </table>
+
 
                 </div>
                 <div class="row">
@@ -133,10 +177,16 @@
 </div>
 <script type="text/javascript">
     $(document).ready(function () {
+        $("#search").on('keyup', function () {
+            let val = $(this).val().toLowerCase();
+            $('tbody tr').filter(function () {
+                $(this).toggle($(this).text().toLowerCase().indexOf(val) > -1)
+            })
+        })
         $("button[type=submit]").on("click", function (e) {
             const name = $("#name").val()
             const client = $("#client").val()
-            if (name == "" || client == "" ) {
+            if (name == "" || client == "") {
                 e.preventDefault()
                 $.notify("نام و مشتری باید وارد شوند.", {
                     position: "top center",

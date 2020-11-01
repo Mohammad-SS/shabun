@@ -4,6 +4,7 @@ from factors import models
 import uuid
 import random
 from xlsxwriter.workbook import Workbook
+import datetime
 import jdatetime
 import pandas as pd
 # Create your views here.
@@ -120,3 +121,26 @@ class ShowAllItems(View):
     def get(self, request):
         items = models.Item.objects.all()
         return render(request , "adminpanel/showTools.html" ,{"items" : items} )
+
+class ImportItems(View):
+    def get(self , request):
+        return render(request , "adminpanel/importTools.html" )
+    def post(self , request):
+        csv = request.FILES['csv']
+        if 'update' in request.POST:
+            update = int(request.POST['update'])
+        else :
+            update = 0
+        if update == 0:
+            models.Item.objects.all().delete()
+        data = pd.read_csv(csv)
+        names = data['name']
+        brands = data['brand']
+        lastPrices = data['last price']
+        c = 0
+        dt = datetime.datetime.now()
+        for name in names:
+            item = models.Item(name=name , brand= brands[c] , lastPrice=lastPrices[c] , id=c+1 , addTime=dt)
+            item.save()
+            c = c + 1
+        return redirect("ShowAllTools")

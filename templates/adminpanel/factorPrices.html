@@ -137,7 +137,11 @@
                                     {{ item.brand }}
                                 </p>
                             </td>
-                            <td>{{ item.lastPrice }} </td>
+                            <td data-id="{{ item.pk }}" data-price="{{ item.lastPrice }}">
+                               <a href="#" id="addLastPrice" data-id="{{ item.pk }}" data-price="{{ item.lastPrice }}">
+                                {{ item.lastPrice }}
+                               </a>
+                            </td>
                             <td>{{ item.changeTimeJalali }}</td>
                             <td><input data-item="{{ item.pk }}"
                                        value="0" class="numbers form-group" type="number"
@@ -172,7 +176,16 @@
 </div>
 <script type="text/javascript">
     $(document).ready(function () {
-        const TMN = value => {
+        $("a#addLastPrice").on("click" , function(e){
+            e.preventDefault()
+            var id = $(e.target).attr("data-id")
+            var lp = parseInt($(e.target).attr("data-price"))
+            var nm = $("input.numbers[data-item="+ id +"]").val()
+            $("p[data-item=" + id + "]").html(TMN(lp*nm).format())
+            $(".pricehint[data-item=" + id + "]").html(" قیمت واحد :" + TMN(lp).format())
+            $("input.prices[data-item="+id+"]").val(lp)
+        })
+        const TMN = function(value){
             return currency(value, {symbol: "", precision: 0})
         }
 
@@ -188,7 +201,7 @@
             {# calc prices : #}
             itemid = $(e.target).attr("data-item")
             number = $(".numbers[data-item=" + itemid + "]").val()
-            totalPrice = $(e.target).val() * number
+            totalPrice = parseInt($(e.target).val() * number)
             $("p[data-item=" + itemid + "]").html(TMN(totalPrice).format())
             $(".pricehint[data-item=" + itemid + "]").html(" قیمت واحد :" + TMN($(e.target).val()).format())
 

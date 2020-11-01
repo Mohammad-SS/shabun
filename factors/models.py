@@ -8,6 +8,8 @@ class Item(models.Model):
     addTime = models.DateTimeField(auto_now_add=True)
     lastChangeTime = models.DateTimeField(auto_now=True)
 
+    def __str__(self):
+        return self.name + "["+ self.brand +"]"
     @property
     def changeTimeJalali(self):
         return jdatetime.datetime.fromgregorian(datetime=self.lastChangeTime).strftime("%Y/%m/%d")
@@ -33,6 +35,9 @@ class Factor(models.Model):
         for lookup in lookups:
             sumitems += lookup.number
         return sumitems
+    def __str__(self):
+        return self.name + "["+ str(self.sku) +"]"
+
 
 class FactorLookUp(models.Model):
     factor = models.ForeignKey(Factor, on_delete=models.CASCADE)
@@ -43,3 +48,6 @@ class FactorLookUp(models.Model):
     @property
     def finalPrice(self):
         return self.number * self.price
+
+    def __str__(self):
+        return "F : " + self.factor.name + " I : " + self.item.name
